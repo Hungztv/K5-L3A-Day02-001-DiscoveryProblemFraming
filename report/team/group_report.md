@@ -138,39 +138,51 @@ Tổng hợp:
 
 ### 4.1. Quy trình hiện tại
 
-Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
+**Bản nháp theo mô tả candidate của Trọng; cần đối chiếu với người học khác ở CP4.** Thời gian 15–20 phút/lần hiện là tín hiệu sơ bộ do một thành viên cung cấp, chưa phải baseline đã kiểm chứng.
 
-```text
-
+```mermaid
+flowchart LR
+  A[Học viên mở rubric và bài assignment] --> B[Đọc rubric, xác định các tiêu chí]
+  B --> C[Soát bài và tìm nội dung tương ứng]
+  C --> D[Đối chiếu từng tiêu chí, ghi mục thiếu hoặc chưa rõ]
+  D --> E[Bổ sung bài và tự kiểm tra lại trước khi nộp]
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Học viên | Rubric, bài assignment | Hai tài liệu sẵn sàng để rà soát | Chưa đo | Candidate mô tả việc tự kiểm tra trước hạn nộp |
+| 2 | Học viên | Rubric | Danh sách tiêu chí cần đáp ứng | Chưa tách riêng | Cần xác minh học viên có phải tự diễn giải/ghi lại tiêu chí không |
+| 3 | Học viên | Bài assignment | Nội dung bài theo từng phần | Chưa tách riêng | Tìm nội dung tương ứng với từng tiêu chí |
+| 4 | Học viên | Tiêu chí và bài assignment | Nhận định tiêu chí đạt, thiếu hoặc chưa rõ | Chưa đo riêng; toàn bộ đối chiếu thủ công khoảng 15–20 phút/lần (thông tin sơ bộ, chờ CP4 xác nhận) | Có nguy cơ bỏ sót tiêu chí nhỏ theo mô tả candidate |
+| 5 | Học viên | Danh sách mục cần bổ sung | Bài đã sửa và được tự rà soát | Chưa đo | Học viên vẫn chịu trách nhiệm quyết định bài đã sẵn sàng để nộp |
 
-**Bottleneck chính:**
+**Bottleneck chính (giả thuyết cần CP4 xác minh):** bước 4 — đối chiếu từng tiêu chí với nội dung bài; chưa có bằng chứng cho biết đây là nút thắt lớn nhất hay tần suất bỏ sót thực tế.
 
 ### 4.2. Quy trình tương lai
 
-Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
+**Phương án để nhóm đánh giá, chưa phải quyết định chọn AI.** Bước tổ chức tiêu chí có thể dùng checklist/Rule; nếu CP6 thấy cần, chỉ dùng AI để gợi ý vị trí bằng chứng hoặc tiêu chí có thể chưa được đáp ứng. Nhóm sẽ chốt mức can thiệp sau CP4.
 
-```text
-
+```mermaid
+flowchart LR
+  A[Học viên cung cấp rubric và bài] --> B[Chuyển tiêu chí thành checklist có dẫn chiếu rubric]
+  B --> C[Đối chiếu từng tiêu chí với nội dung bài; đánh dấu có bằng chứng, thiếu hoặc chưa rõ]
+  C --> D[Học viên kiểm tra từng nhận định và dẫn chiếu]
+  D --> E[Bổ sung hoặc sửa bài]
+  E --> F[Rà soát lại checklist; học viên tự quyết định và nộp bài]
+  D -. Nếu công cụ lỗi hoặc kết quả không đáng tin .-> G[Quay về tự đối chiếu rubric và bài theo cách hiện tại]
 ```
+
+**Phân vai và boundary dự kiến:** học viên cung cấp tài liệu, kiểm tra mọi nhận định và tự sửa/nộp bài. Checklist/Rule hoặc AI chỉ hỗ trợ đối chiếu; không tự chấm điểm, tự sửa nội dung, kết luận bài chắc chắn đạt, hoặc tự nộp bài. Mọi tiêu chí mơ hồ, thiếu căn cứ hay không tìm được bằng chứng phải được đánh dấu “cần người kiểm tra”, không được tự suy diễn. Nếu công cụ lỗi hoặc đưa kết quả không có căn cứ, quay lại cách tự đối chiếu hiện tại.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 5 bước trong bản đồ nháp | 6 bước trong phương án nháp | Đếm theo sơ đồ; cần xác nhận quy trình thực tế ở CP4 |
+| Tổng thời gian | Khoảng 15–20 phút/lần đối chiếu thủ công (sơ bộ) | Chưa đo | Không đặt mục tiêu giảm thời gian trước khi có baseline và thử nghiệm |
+| Số bước thủ công | 5 bước do học viên thực hiện | Ít nhất 4 bước của học viên: cung cấp tài liệu, kiểm tra kết quả, sửa bài, rà soát và quyết định nộp; các bước hỗ trợ chưa chốt Rule/AI | Phân loại tạm theo phương án tương lai, sẽ cập nhật sau CP6 |
+| Bottleneck chính | Đối chiếu từng tiêu chí với bài; giả thuyết | Chưa xác định | Cần đo thời gian và hỏi về trường hợp bỏ sót |
+| Rủi ro mới phát sinh | Bỏ sót tiêu chí khi tự rà; cần xác minh tần suất | Đánh dấu sai hoặc thiếu bằng chứng; người học quá tin kết quả; lộ nội dung bài nếu dùng công cụ không phù hợp | Giảm thiểu bằng dẫn chiếu rubric/bài, bước người học xác nhận, và quay về rà soát thủ công |
 
 ---
 
@@ -267,9 +279,23 @@ rẽ nhánh và toàn bộ input đã có sẵn trong 2 file (rubric + bài nộ
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Đối chiếu đúng rubric | Mọi trạng thái đạt/thiếu/chưa rõ bám vào đúng tiêu chí và phiên bản rubric được cung cấp | Bỏ qua, gộp nhầm hoặc tự thêm tiêu chí không có trong rubric |
+| 2 | Bằng chứng có thể kiểm tra | Mỗi nhận định chỉ rõ đoạn/tiêu đề trong bài làm căn cứ để học viên kiểm tra lại | Kết luận đạt/thiếu nhưng không trỏ được đến bằng chứng trong bài |
+| 3 | Không bịa hoặc suy diễn | Khi rubric hay bài không đủ thông tin, ghi “chưa rõ/cần người kiểm tra” | Tự suy ra nội dung, tiêu chí hoặc kết luận chắc chắn khi thiếu căn cứ |
+| 4 | Phát hiện tiêu chí chưa đáp ứng | Nêu đúng các tiêu chí thiếu bằng chứng hoặc có dấu hiệu chưa đáp ứng trong bộ test được người chấm xác nhận | Bỏ sót tiêu chí chưa đáp ứng đã được xác định trong đáp án chuẩn |
+| 5 | Giữ quyền quyết định của học viên | Đầu ra chỉ là gợi ý rà soát; học viên phải xác nhận và tự quyết định sửa/nộp | Tự sửa bài, tự cho điểm/kết luận đạt, hoặc tự nộp thay học viên |
+
+**Bộ test case nháp (chưa chạy; cần rubric và bài mẫu/đáp án chuẩn được phép sử dụng để điền dữ liệu cụ thể):**
+
+| # | Trường hợp kiểm thử | Kết quả mong đợi |
+|---:|---|---|
+| 1 | Tiêu chí được đáp ứng rõ ràng và có đoạn bằng chứng trực tiếp trong bài | Đánh dấu có bằng chứng, trỏ đúng tiêu chí rubric và vị trí bằng chứng; không khẳng định điểm số |
+| 2 | Một tiêu chí không có nội dung tương ứng trong bài | Nêu tiêu chí còn thiếu, dẫn chiếu rubric; không tự tạo nội dung bổ sung |
+| 3 | Bài có nội dung liên quan nhưng không đủ thông tin để kết luận đáp ứng tiêu chí | Đánh dấu “chưa rõ/cần người kiểm tra” và chỉ ra thông tin nào chưa đủ |
+| 4 | Rubric có tiêu chí mơ hồ, mâu thuẫn hoặc không có trong tài liệu đầu vào | Không tự diễn giải thành quy tắc chắc chắn; yêu cầu người học/giảng viên làm rõ |
+| 5 | Nội dung bài có định dạng khác thường hoặc phần văn bản không đọc được | Báo không thể kiểm tra phần đó và yêu cầu rà soát thủ công; không báo bài đã đạt |
+
+**Cách đánh giá khi có bộ dữ liệu:** người chấm tạo đáp án chuẩn bằng rubric và bài mẫu, sau đó kiểm tra từng test theo 5 tiêu chí trên; ghi kết quả và lỗi thực tế trước khi đề xuất pilot. Hiện chưa có kết quả chạy test hay ngưỡng đạt, nên không kết luận hiệu năng.
 
 ---
 
