@@ -209,13 +209,13 @@ Tái lập hoặc tiếp tục huấn luyện
 | Pitch Problem Card | Trình bày 3 Problem Card: quản lý công việc nhóm, tìm kiếm và tổng hợp tài liệu, quản lý thí nghiệm Machine Learning. | Giúp nhóm hiểu các vấn đề tôi đề xuất và có cơ sở để đánh giá, lựa chọn Problem phù hợp. |
 | Phản biện bài của bạn khác | Câu hỏi tôi đã đặt cho Lê Quang Vinh về đề tài tiếp nhận phản ánh cư dân và điều phối xe: (1) Cư dân hiện gửi phản ánh qua những kênh nào? (2) Ai là người chịu ảnh hưởng chính: cư dân hay nhân viên? (3) Làm thế nào để đo lường hiệu quả điều phối xe? |Làm rõ hơn đối tượng chịu ảnh hưởng, quy trình tiếp nhận phản ánh và cách đánh giá hiệu quả của giải pháp. Đồng thời yêu cầu người đề xuất làm rõ cơ sở thực tế của vấn đề. |
 | Nhận phản biện | Câu hỏi tôi nhận được từ Dương Mạnh Hùng về: (1) Lần gần nhất phải hỏi lại nhiệm vụ hoặc deadline, thời gian mất và ảnh hưởng đến tiến độ. (2) Bottleneck chính khi xử lý 5–8 tài liệu trong 2–3 giờ. (3) Lần gần nhất không tìm lại được dataset, cấu hình hoặc checkpoint và hậu quả. | Các câu hỏi yêu cầu tôi đưa ra tình huống thực tế, thời gian cụ thể và hậu quả thay vì chỉ mô tả vấn đề ở mức giả thuyết. Cần bổ sung bằng chứng và xác định chính xác bottleneck của từng Problem. |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Gom cluster / cây OST | Tham gia thảo luận và đối chiếu các candidate trong quá trình nhóm hội tụ về một vấn đề chung. | Nhóm thống nhất tập trung vào Candidate #11 – kiểm tra bài assignment theo rubric. Cần phân biệt pain của người học với giải pháp công cụ, tránh đưa tính năng AI vào tầng opportunity. |
+| Chọn candidate problem | Tham gia quá trình thảo luận lựa chọn bài toán kiểm tra assignment theo rubric. | Giúp phạm vi bài nhóm tập trung vào một quy trình cụ thể: người học tự đối chiếu bài làm với từng tiêu chí rubric trước khi nộp. |
+| Kiểm chứng / research | Phụ trách research 2–3 công cụ/case liên quan đến đánh giá bài làm theo rubric: CoGrader, Gradescope và Turnitin Feedback Studio. Đối chiếu chức năng, bước được hỗ trợ và khoảng trống của từng công cụ. | Bổ sung bằng chứng về các cách tiếp cận đã tồn tại: chấm và phản hồi theo rubric, nhóm câu trả lời tương tự, rubric và công cụ feedback. Từ đó, nhóm cần tránh giả định rằng phải xây dựng một hệ thống AI chấm bài hoàn toàn mới. |
+| Quy trình nhóm | Đọc và đối chiếu quy trình hiện tại/tương lai của nhóm với kết quả research. | Làm rõ rằng công cụ chỉ nên hỗ trợ tìm bằng chứng và phát hiện tiêu chí có thể chưa đáp ứng; người học vẫn phải kiểm tra kết quả, sửa bài và quyết định nộp. |
+| Problem Statement | Tham gia rà soát tính nhất quán giữa vấn đề, bottleneck, quy trình và hướng can thiệp AI thông qua phần research và AI Canvas được phân công. | Góp phần giữ phạm vi bài toán ở việc hỗ trợ người học tự rà soát theo rubric, không mở rộng thành hệ thống tự chấm điểm hoặc thay thế giảng viên. |
+| Mức can thiệp AI | Phụ trách xây dựng AI Canvas rút gọn, phân tách Prediction, Judgment, Action, Outcome, Input và Feedback. | Làm rõ AI có thể gợi ý trạng thái bằng chứng theo từng tiêu chí; người học phải xác nhận nhận định và tự quyết định hành động. Các trường hợp thiếu dữ liệu hoặc mơ hồ phải chuyển cho con người kiểm tra. |
+| Quyết định | Tham gia phân tích mức can thiệp, rủi ro và tiêu chí đánh giá để cung cấp cơ sở cho quyết định của nhóm. | Đề xuất chỉ tiến hành thử nghiệm nhỏ sau khi có rubric, bài assignment mẫu và đáp án chuẩn. Chưa thể kết luận giải pháp hiệu quả khi chưa có kết quả kiểm thử thực tế. |
 
 ---
 
@@ -223,35 +223,51 @@ Tái lập hoặc tiếp tục huấn luyện
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Hỗ trợ mở rộng và diễn đạt các vấn đề theo Job Story; gợi ý actor, bối cảnh và cách đo dấu hiệu của vấn đề. | Giúp hệ thống hóa ý tưởng ban đầu và nhận diện những thông tin còn thiếu trong mỗi Problem. | AI có thể đưa ra các con số hoặc tình huống nghe hợp lý nhưng chưa có bằng chứng thực tế. | Giữ các số liệu chưa xác minh ở mức ước lượng hoặc giả thuyết; không xem nội dung AI gợi ý là dữ liệu khảo sát. |
+| CP2 Problem Card | Hỗ trợ rà soát cấu trúc Problem Card, quy trình hiện tại, bottleneck, impact và success metric. | Giúp phát hiện các trường còn chung chung và chuyển mô tả thành các bước dễ thảo luận. | AI có xu hướng đề xuất công cụ hoặc giải pháp quá sớm, trong khi nguyên nhân và bottleneck chưa được kiểm chứng. | Tách vấn đề khỏi giải pháp; giữ các câu hỏi chưa có câu trả lời để nhóm tiếp tục kiểm chứng. |
+| CP4 Research | Hỗ trợ tìm và tổng hợp thông tin về CoGrader, Gradescope và Turnitin Feedback Studio; so sánh chức năng, lợi ích và giới hạn. | Giúp tạo khung so sánh thống nhất giữa các công cụ và xác định bài học có thể áp dụng cho candidate của nhóm. | Thông tin giới thiệu sản phẩm có thể nhấn mạnh lợi ích, không phản ánh đầy đủ giới hạn hoặc điều kiện sử dụng. | Đối chiếu các claim quan trọng với trang chính thức của từng công cụ; chỉ ghi nhận chức năng có nguồn xác nhận và không suy diễn rằng các công cụ có cùng cách hoạt động. |
+| CP5 Quy trình | Hỗ trợ rà soát trình tự các bước trong quy trình hiện tại và quy trình tương lai, đồng thời kiểm tra sự nhất quán giữa bottleneck và điểm can thiệp. | Giúp trình bày quy trình rõ ràng, nhận diện vai trò của người học và các bước cần kiểm tra thủ công. | AI có thể gộp nhiều thao tác khác nhau thành một bước hoặc tự giả định rằng tự động hóa sẽ tiết kiệm thời gian. | Đối chiếu với quy trình nhóm đã thống nhất; không đưa ra kết luận giảm thời gian khi chưa đo baseline và chưa thử nghiệm. |
+| CP5–6 Problem Statement | Hỗ trợ rà soát các trường Actor, Quy trình, Bottleneck, Impact, Success Metric và Boundary. | Giúp phát hiện chỗ mô tả vấn đề chưa rõ hoặc lẫn giải pháp vào Problem Statement. | AI có thể viết Problem Statement nghe thuyết phục nhưng sử dụng giả định chưa được xác minh. | Giữ các thông tin chưa có bằng chứng ở trạng thái giả thuyết; không biến đề xuất giải pháp thành nhu cầu đã được người dùng xác nhận. |
+| CP6 Mức can thiệp / quyết định | Hỗ trợ cấu trúc AI Canvas và phân tích vai trò Prediction, Judgment, Action, Outcome, Input, Feedback; rà soát rủi ro của việc dùng AI. | Giúp phân biệt phần AI có thể hỗ trợ với phần người học phải tự đánh giá và quyết định. | AI có thể mặc định cần sử dụng AI hoặc đề xuất Agent dù checklist/Rule có thể giải quyết một phần đáng kể vấn đề. | Giới hạn AI ở việc gợi ý bằng chứng và trạng thái tiêu chí; yêu cầu người học xác nhận. Không cho AI tự chấm điểm, tự sửa hoặc tự nộp bài. Chưa kết luận hiệu quả khi chưa có bộ test và kết quả đánh giá. |
 
 ---
 
 ## 6. Reflection (CP7)
 
-Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
+### 6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Tôi nhận ra mỗi người có những vấn đề khác nhau trong học tập và công việc. Có những vấn đề ban đầu nghe khá đơn giản nhưng khi phân tích kỹ lại có nhiều khó khăn bên trong. Tôi học được rằng cần hiểu rõ vấn đề trước khi nghĩ đến giải pháp.
 
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+### 6.2. Nhóm có lúc nào bị solution-first không?
 
-**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Có. Trong quá trình thảo luận, nhóm đôi lúc nghĩ ngay đến việc sử dụng AI để kiểm tra và chấm bài. Tuy nhiên, sau khi phân tích, tôi nhận ra mục tiêu chính không phải tạo ra một AI grader mà là giúp người học tự kiểm tra bài làm theo rubric tốt hơn.
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+### 6.3. Tôi có đổi ý sau khi bị phản biện không?
 
-**6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Có. Những câu hỏi phản biện giúp tôi nhận ra một số mô tả vấn đề còn chung chung và thiếu ví dụ cụ thể. Tôi hiểu rằng không nên chỉ dựa vào suy nghĩ cá nhân để kết luận một vấn đề thực sự tồn tại.
 
-**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+### 6.4. Kết quả kiểm chứng có làm tôi bất ngờ không?
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+Khi tìm hiểu CoGrader, Gradescope và Turnitin Feedback Studio, tôi nhận ra đã có nhiều công cụ hỗ trợ đánh giá và phản hồi bài làm. Điều này khiến tôi thấy cần xác định rõ điểm khác biệt của bài toán nhóm đang giải quyết, thay vì mặc định phải tạo ra một công cụ chấm bài mới.
 
----
+### 6.5. Điều khó nhất khi viết Problem Statement là gì?
+
+Điều khó nhất với tôi là xác định đúng bottleneck và phân biệt giữa vấn đề thực tế với giải pháp mong muốn. Ngoài ra, việc đưa ra success metric cũng khó vì nhóm chưa có đủ dữ liệu để xác định baseline chính xác.
+
+### 6.6. Nếu làm lại, tôi sẽ đổi gì?
+
+Nếu làm lại, tôi sẽ tìm hiểu vấn đề từ người dùng sớm hơn và đặt nhiều câu hỏi cụ thể hơn. Tôi cũng sẽ kiểm tra các công cụ hiện có ngay từ đầu để hiểu rõ những gì đã được giải quyết và những khoảng trống còn tồn tại.
+
+### 6.7. Hiểu bài — tự viết 5–8 câu, không nhìn tài liệu
+
+Bài toán của nhóm là hỗ trợ người học kiểm tra assignment theo rubric trước khi nộp. Hiện tại, người học phải tự đọc từng tiêu chí và đối chiếu với nội dung bài làm. Việc này có thể khiến họ bỏ sót những tiêu chí chưa đáp ứng. Nhóm đề xuất sử dụng AI để hỗ trợ tìm bằng chứng và chỉ ra những tiêu chí còn thiếu hoặc chưa rõ. Tuy nhiên, AI không được tự quyết định điểm số hoặc kết luận bài làm đạt yêu cầu. Người học vẫn phải kiểm tra kết quả và tự quyết định chỉnh sửa. Hiệu quả của giải pháp cần được đánh giá bằng các bài kiểm thử thực tế.
 
 ## 7. Tài liệu tham khảo
 
--
+1. CoGrader. *AI Grader / Rubric-based grading*. https://cograder.com/ai-grading/
+2. CoGrader. *AI Transparency Note*. https://cograder.com/ai-transparency-note/
+3. Gradescope. *AI-Assisted Grading and Answer Groups*. https://www.gradescope.com/
+4. Gradescope Help. *AI-Assisted Grading and Answer Groups*. https://www.gradescope.ca/help
+5. Turnitin. *Feedback Studio*. https://www.turnitin.com/products/feedback-studio/
+6. Turnitin Guides. *Reviewing your grade and rubric*. https://guides.turnitin.com/hc/en-us/articles/23859968188429-Reviewing-your-grade-and-rubric
+
