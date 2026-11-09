@@ -41,71 +41,75 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Khó hiểu tài liệu hướng dẫn trước mỗi buổi lab | Xảy ra khoảng 5 buổi/tuần, mất 30 phút mỗi buổi; actor và bottleneck dễ xác định. | Chưa biết nguyên nhân chính là tài liệu dài, cấu trúc khó hiểu hay thiếu ví dụ. |
+| 2 | Mất nhiều thời gian kiểm tra và debug code backend | Xảy ra hầu hết các ngày làm việc, mất 30–90 phút/ngày; impact rõ và có thể đo bằng thời gian debug. | Chưa biết lỗi logic, bảo mật hay truy vấn là nhóm lỗi chiếm nhiều thời gian nhất. |
+| 3 | Khó trích xuất đúng thông tin từ tài liệu có bảng biểu | Xử lý 2–5 tài liệu/ngày, mất 20–30 phút và có lúc phải kiểm tra lại 1–2 lần. | Chưa biết lỗi thường đến từ cấu trúc tài liệu, cách tìm kiếm hay thiếu bước kiểm chứng. |
 
 ### Problem Card #1
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Job Story | Khi bắt đầu buổi lab và nhận tài liệu Git, tôi muốn hiểu mục tiêu và hướng dẫn ngay ở lần đọc đầu, để bắt đầu làm bài đúng hướng. |
+| Actor | Sinh viên tham gia buổi lab |
+| Thời điểm / bối cảnh | Bắt đầu buổi lab, khi nhận tài liệu Git và hướng dẫn bài tập |
+| Quy trình hiện tại (3–7 bước) | Mở tài liệu (5 phút) → đọc mục tiêu (5 phút) → đọc hướng dẫn (15–20 phút) → đọc lại phần chưa hiểu (10 phút) |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Đọc mục tiêu và phần phân chia công việc chưa rõ, khiến phải đọc lại hướng dẫn; tổng thời gian có thể lên 30–60 phút. |
+| Impact (nếu không giải thì sao) | Có thể làm sai yêu cầu, mất nhiều thời gian hơn các bạn khác và phải hỏi lại. |
+| Success metric (baseline → target) | Thời gian hiểu tài liệu từ 30–60 phút xuống dưới 30 phút/buổi; đo bằng thời gian từ lúc mở tài liệu đến khi bắt đầu làm đúng task đầu tiên. |
+| Phương án không dùng AI | Dùng checklist, ghi chú cá nhân và tìm ví dụ minh họa trước khi bắt đầu làm bài. |
+| Giả thuyết về AI (nếu có) | Có thể hỗ trợ làm rõ mục tiêu, phân chia công việc và chỉ ra phần cần đọc trước; sinh viên vẫn tự kiểm tra lại với tài liệu gốc. |
+| Cảm nhận nhanh | Chưa biết |
 
 Quy trình nháp hiện tại:
 
 ```text
-
+[Mở tài liệu: 5'] → [Đọc mục tiêu: 5']
+→ [Đọc hướng dẫn: 15–20'] → [Đọc lại phần chưa hiểu: 10'] ← BOTTLENECK
+→ [Bắt đầu làm bài]
 ```
 
 ### Problem Card #2
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Job Story | Khi phát hiện lỗi hoặc thấy sản phẩm có vấn đề, tôi muốn xác định và sửa nguyên nhân trong thời gian ngắn, để duy trì hiệu năng công việc và chất lượng sản phẩm. |
+| Actor | Lập trình viên backend |
+| Thời điểm / bối cảnh | Khi phát hiện lỗi trong quá trình phát triển hoặc khi sản phẩm có hành vi không đúng |
+| Quy trình hiện tại (3–7 bước) | Khoanh vùng phần kiến trúc bị ảnh hưởng (5–10 phút) → trích xuất log (10 phút) → phân tích và sửa mã nguồn (10–20 phút hoặc lâu hơn) → kiểm tra, thử nghiệm lại toàn bộ luồng (20–30 phút) |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Debug và xác định nguyên nhân sau khi xem log; bước sửa lỗi có thể kéo dài hơn 20 phút khi nguyên nhân chưa rõ. |
+| Impact (nếu không giải thì sao) | Tạo vòng lặp debug, làm giảm hiệu năng công việc và kéo dài thời gian hoàn thiện sản phẩm. |
+| Success metric (baseline → target) | Thời gian xử lý hiện tại khoảng 30–90 phút/lần lỗi; mục tiêu giảm xuống dưới 45 phút/lần lỗi. |
+| Phương án không dùng AI | Thiết lập test tự động và logging đầy đủ để phát hiện, tái hiện và khoanh vùng lỗi nhanh hơn. |
+| Giả thuyết về AI (nếu có) | Có thể dùng AI để hỗ trợ phân tích log và gợi ý nguyên nhân, nhưng lập trình viên phải kiểm tra mã nguồn và chạy test trước khi chấp nhận sửa đổi. |
+| Cảm nhận nhanh | Chưa biết |
 
 Quy trình nháp hiện tại:
 
 ```text
-
+[Khoanh vùng kiến trúc: 5–10'] → [Trích xuất log: 10']
+→ [Phân tích và sửa mã: 10–20'+] → [Kiểm tra toàn bộ luồng: 20–30'] ← BOTTLENECK
 ```
 
 ### Problem Card #3
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Job Story | Khi bắt đầu làm bài và cần đọc file Markdown hoặc slide do giảng viên cung cấp, tôi muốn tìm và hiểu đúng thông tin cần thiết, để hoàn thành bài mà không bỏ sót hoặc hiểu sai yêu cầu. |
+| Actor | Sinh viên |
+| Thời điểm / bối cảnh | Khi bắt đầu làm bài từ tài liệu Markdown hoặc slide do giảng viên cung cấp |
+| Quy trình hiện tại (3–7 bước) | Mở tài liệu (5 phút) → đọc nội dung (10–20 phút) → ghi chú và kiểm tra lại thông tin (15 phút) |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Đọc hiểu nội dung, đặc biệt khi tài liệu có nhiều phần cần đối chiếu; bước này chiếm khoảng 10–20 phút và có thể phải kiểm tra lại. |
+| Impact (nếu không giải thì sao) | Hiểu sai hoặc bỏ sót thông tin, dẫn đến làm sai tài liệu, mất thêm thời gian và giảm lượng kiến thức tiếp thu được. |
+| Success metric (baseline → target) | Thời gian xử lý hiện tại khoảng 20–30 phút/tài liệu; mục tiêu giảm còn 15–20 phút/tài liệu và giảm lỗi nhầm hoặc bỏ sót thông tin. |
+| Phương án không dùng AI | Kiểm tra chéo các thông tin quan trọng giữa tài liệu và ghi chú trước khi bắt đầu làm bài. |
+| Giả thuyết về AI (nếu có) | Có thể hỗ trợ tìm và đối chiếu thông tin trong tài liệu, nhưng sinh viên vẫn phải kiểm tra lại nội dung gốc trước khi sử dụng. |
+| Cảm nhận nhanh | Chưa biết |
 
 Quy trình nháp hiện tại:
 
 ```text
-
+[Mở tài liệu: 5'] → [Đọc nội dung: 10–20']
+→ [Ghi chú và kiểm tra lại: 15'] ← BOTTLENECK
 ```
 
 ### Card muốn pitch nhất
@@ -118,7 +122,9 @@ Quy trình nháp hiện tại:
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| | | |
+| Một số ý tưởng ban đầu viết theo hướng solution-first như RAG, AI Code Reviewer hoặc Chatbot thay vì mô tả problem. | Có | Viết lại thành Job Story tập trung vào bối cảnh, nhu cầu và kết quả mong muốn; đưa giải pháp vào phần giả thuyết riêng. |
+| Metric ban đầu còn chung chung, ví dụ “tối ưu nhanh nhất có thể”. | Có | Đổi thành metric đo được: debug từ 30–90 phút/lần lỗi xuống dưới 45 phút/lần lỗi. |
+| Bottleneck cần là một bước cụ thể trong quy trình, không chỉ là “quy trình chậm”. | Có | Bổ sung bước nghẽn và thời lượng: đọc lại phần chưa hiểu, debug/xác định nguyên nhân, và ghi chú/kiểm tra lại tài liệu. |
 
 ---
 
