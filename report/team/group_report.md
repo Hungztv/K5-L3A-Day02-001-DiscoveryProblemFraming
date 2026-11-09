@@ -7,8 +7,8 @@
 
 - Tên nhóm: 001
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
-- Quyết định cuối: Go / Not Yet / No-Go
+- Candidate problem được chọn (1 câu): Học viên cần kiểm tra nhanh các tiêu chí định lượng trong rubric trước khi nộp assignment để giảm lỗi thiếu mục và sai định dạng.
+- Quyết định cuối: Not Yet
 
 ---
 
@@ -240,8 +240,8 @@ rẽ nhánh và toàn bộ input đã có sẵn trong 2 file (rubric + bài nộ
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+- Người dùng muốn **được hỗ trợ (augment)**. Bằng chứng: học viên vẫn muốn tự kiểm tra phần định tính, sửa bài và quyết định nộp; công cụ chỉ tạo checklist cho tiêu chí định lượng.
+- AI sai kiểu **bỏ sót** nguy hiểm hơn vì có thể khiến học viên tưởng bài đã đủ và nộp bài thiếu mục. Thiết kế xử lý bằng trạng thái “chưa rõ”, dẫn chứng cho từng nhận định, bắt buộc người học kiểm tra và fallback về rà thủ công.
 
 ---
 
@@ -249,21 +249,24 @@ rẽ nhánh và toàn bộ input đã có sẵn trong 2 file (rubric + bài nộ
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** | Học viên khóa AI Thực chiến, chuẩn bị nộp assignment có rubric dạng file. |
+| **Quy trình** | Cung cấp rubric và bài assignment → trích tiêu chí định lượng → đối chiếu bằng chứng → hiển thị có/thiếu/chưa rõ → học viên kiểm tra, sửa bài và tự quyết định nộp. |
+| **Bottleneck** | Đối chiếu thủ công từng tiêu chí mất khoảng 15 phút/lần; 3/5 người khảo sát chỉ đọc rubric sau khi bị trừ điểm. |
+| **Impact** | Học viên dễ mất điểm vì thiếu section, link repo hoặc sai định dạng dù đã hoàn thành phần chính của bài; 5/5 người khảo sát từng gặp lỗi thiếu mục rubric. |
+| **Success Metric** (baseline → target, cách đo) | Baseline khoảng 15 phút/lần đối chiếu thủ công. Target thử nghiệm: trả kết quả dưới 30 giây và hoàn tất rà soát định lượng dưới 3 phút/lần. Đo thời gian, độ chính xác từng tiêu chí và số lỗi thiếu mục trong pilot. |
+| **Boundary** | Chỉ kiểm tra tiêu chí định lượng; không chấm chất lượng nội dung, không tự sửa và không tự nộp. Học viên phải tự rà phần định tính và quyết định cuối cùng. |
+| **AI intervention point** | Sau khi rubric và bài được cung cấp, AI hỗ trợ trích tiêu chí định lượng và đối chiếu bằng chứng, trả trạng thái có/thiếu/chưa rõ. |
+| **Mức chọn** | Workflow |
+| **Rủi ro & người kiểm tra** | Học viên kiểm tra từng kết quả. Nếu đầu vào thiếu, rubric mơ hồ hoặc kết quả không có căn cứ thì quay về rà thủ công. |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+| Phạm vi | Đối chiếu rubric và bài assignment nói chung | Chỉ kiểm tra tiêu chí định lượng; phần định tính chuyển cho học viên tự rà | Survey cho thấy rubric có phần định tính và AI khó đánh giá chính xác |
+| Người dùng | Học viên cần biết bài đã đáp ứng rubric | Học viên cần checklist có/thiếu/chưa rõ trước khi nộp | 3/5 người chỉ đọc rubric sau khi bị trừ điểm |
+| Mức can thiệp | Chưa xác định | Workflow, có HITL | Workflow đủ cho các bước cố định; Agent quá rộng và Rule quá cứng |
+| Metric | Khoảng 15 phút đối chiếu thủ công | Dưới 30 giây trả kết quả, dưới 3 phút rà định lượng | Chuyển mục tiêu thành chỉ số có thể kiểm thử trong pilot |
 
 **Tiêu chí đánh giá đầu ra của công cụ kiểm tra (dùng được cả khi nhóm chọn Rule/No AI; không chấm chất lượng định tính):**
 
@@ -295,30 +298,33 @@ rẽ nhánh và toàn bộ input đã có sẵn trong 2 file (rubric + bài nộ
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | TB | 5/5 người khảo sát từng bị trừ điểm vì thiếu mục rubric, nhưng 3/5 chỉ đọc rubric sau khi bị trừ điểm; cần kiểm chứng điểm chạm trước deadline. |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | TB | Trạng thái có/thiếu/chưa rõ và dẫn chứng có thể hiểu được, nhưng chưa có prototype hoặc test UX. |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | TB | Rubric và bài assignment đều có dạng file đọc được trong survey; chưa đo độ chính xác trên dữ liệu thật và chưa chạy pilot. |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | TB | Có thể bắt đầu bằng prototype nhỏ và người học tự vận hành; cần xin phép sử dụng rubric/bài mẫu và không gửi dữ liệu riêng tư khi chưa được phép. |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** Not Yet
 
-**Lý do:**
+**Lý do:** Survey 5 người xác nhận pain và baseline ban đầu, nhưng nhóm chưa chạy prototype để đo độ chính xác, false positive/negative hoặc khả năng trả kết quả dưới 30 giây. Vấn đề đủ rõ để tiếp tục pilot nhỏ nhưng chưa đủ bằng chứng để quyết định Go.
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Go — pilot nhỏ nhất:** Chọn 3–5 assignment và rubric được phép sử dụng, lập đáp án chuẩn cho tiêu chí định lượng, chạy workflow và đo thời gian, độ chính xác, false positive/negative cùng mức hiểu của học viên.
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
+**Nếu Not Yet — cần kiểm chứng gì trước:** Chạy pilot trên rubric và assignment thực tế được phép dùng; kiểm tra section, link, tên/định dạng file; đo thời gian dưới 30 giây, rà soát dưới 3 phút và xác nhận học viên hiểu trạng thái có/thiếu/chưa rõ.
 
-**Nếu No-Go — nên làm gì thay AI:**
+**Nếu No-Go — nên làm gì thay AI:** Dùng checklist hoặc template cập nhật theo từng rubric, kèm bước tự rà và nhắc trước deadline.
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Ngưỡng dừng** (nếu pilot có độ chính xác dưới 90% trên tiêu chí định lượng, thường xuyên báo sai hoặc người học hiểu nhầm là bài đã chắc chắn đạt thì dừng Workflow và quay về checklist/Rule có người kiểm tra).
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+- Mẫu survey chỉ có 5 người và chủ yếu là tự báo cáo, chưa thay thế được log hoặc dữ liệu chấm bài thực tế.
+- Chưa có prototype và chưa đo độ chính xác, false positive/negative hoặc thời gian trả kết quả.
+- Các công cụ research chủ yếu phục vụ giảng viên; cần kiểm chứng thêm nhu cầu của học viên tự kiểm tra trước khi nộp.
+- Bước tiếp theo là xin phép dùng 3–5 rubric/assignment mẫu, lập đáp án chuẩn và chạy pilot nhỏ trước khi quyết định Go.
 
 ## 10. Tài liệu tham khảo
 

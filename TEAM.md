@@ -5,17 +5,18 @@
 ## Thông tin nhóm
 
 - Tên nhóm:001
-- Candidate problem nhóm chọn (1 câu):
-- Quyết định cuối (Go / Not Yet / No-Go):
+- Candidate problem nhóm chọn (1 câu): Học viên cần kiểm tra nhanh các tiêu chí định lượng trong rubric trước khi nộp assignment để giảm lỗi thiếu mục và sai định dạng.
+- Quyết định cuối (Go / Not Yet / No-Go): Not Yet
 
 ## Thành viên
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
+| 1 | Dương Mạnh Hùng | 2A202603431 | Trưởng nhóm, điều phối và tổng hợp | ManhHung |
+| 2 | Lê Đoàn Dương | 2A202603372 | Research giải pháp, AI Canvas | LeDoanDuong |
+| 3 | Nguyễn Đức Trọng | 2A202603367 | Kiểm chứng, survey, Assumption Map, ma trận AI | NguyenDucTrong |
+| 4 | Lê Quang Vinh | 2A202603363 | Quy trình trước/sau, evaluation | LeQuangVinh |
+| 5 | Kiều Thắng | 2A202603424 | Problem Statement và boundary | kieuthang |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
@@ -25,13 +26,13 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|
-| CP3 — Hội tụ nhóm | | | Cluster, cây OST, bảng chấm điểm |
-| CP4 — Kiểm chứng | | | Assumption map, snapshot hoặc survey |
-| CP4 — Research | | | Bảng research có link |
-| CP5 — Quy trình trước/sau | | | Quy trình + bảng before/after |
-| CP5 — Problem Statement v0 | | | Problem Statement v0 |
-| CP6 — Mức can thiệp + Problem Statement v1 | | | Ma trận, AI Canvas, eval, Problem Statement v1 |
-| CP6 — Quyết định | | | 4 rủi ro + Go/Not Yet/No-Go |
+| CP3 — Hội tụ nhóm | Dương Mạnh Hùng | Cả nhóm | Cluster, cây OST, bảng chấm điểm |
+| CP4 — Kiểm chứng | Nguyễn Đức Trọng | Dương Mạnh Hùng | Assumption Map, survey |
+| CP4 — Research | Lê Đoàn Dương | Nguyễn Đức Trọng | Bảng research có link |
+| CP5 — Quy trình trước/sau | Lê Quang Vinh | Kiều Thắng | Quy trình + bảng before/after |
+| CP5 — Problem Statement v0 | Kiều Thắng | Lê Quang Vinh, Nguyễn Đức Trọng | Problem Statement v0 |
+| CP6 — Mức can thiệp + Problem Statement v1 | Nguyễn Đức Trọng | Cả nhóm | Ma trận, AI Canvas, evaluation, Problem Statement v1 |
+| CP6 — Quyết định | Dương Mạnh Hùng | Cả nhóm | 4 rủi ro + Go/Not Yet/No-Go |
 
 ## Cá nhân
 
