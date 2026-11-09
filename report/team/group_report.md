@@ -229,12 +229,12 @@ rẽ nhánh và toàn bộ input đã có sẵn trong 2 file (rubric + bài nộ
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction — AI dự đoán / tạo ra gì?** | AI tiếp nhận rubric và bài assignment, phân tích từng tiêu chí và đề xuất trạng thái tương ứng: **Có bằng chứng đáp ứng / Thiếu bằng chứng / Chưa rõ – cần người kiểm tra**. Với mỗi nhận định, AI cung cấp vị trí hoặc đoạn nội dung trong bài làm làm căn cứ đối chiếu với tiêu chí rubric. AI không tự chấm điểm hoặc kết luận bài đạt hay không đạt. |
+| **Judgment — Con người cân nhắc, quyết định gì?** | Học viên kiểm tra tính chính xác của nhận định, đối chiếu bằng chứng với rubric, đánh giá những tiêu chí còn mơ hồ hoặc chưa rõ và quyết định nội dung nào cần bổ sung, chỉnh sửa. Nếu kết quả AI thiếu căn cứ hoặc không chính xác, học viên tự đối chiếu lại theo rubric gốc. |
+| **Action — Hành động cuối cùng là gì, ai làm?** | AI tạo checklist kết quả đối chiếu theo từng tiêu chí và dẫn chiếu đến nội dung liên quan trong bài. Học viên kiểm tra checklist, tự bổ sung hoặc chỉnh sửa assignment, rà soát lại và tự quyết định thời điểm nộp bài. AI không tự sửa nội dung, tự nộp bài hoặc thay thế quyết định của học viên. |
+| **Outcome — Đo kết quả bằng gì?** | Đánh giá thông qua: (1) Thời gian hoàn thành một lần kiểm tra assignment so với quy trình thủ công; (2) Tỷ lệ nhận định đúng theo từng tiêu chí rubric; (3) Tỷ lệ nhận định có dẫn chứng chính xác từ bài làm; (4) Số tiêu chí chưa đáp ứng bị bỏ sót; (5) Mức độ hữu ích của checklist đối với học viên. Baseline và target cần được xác định sau khi thử nghiệm với bài mẫu và người dùng thực tế. |
+| **Input — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không?** | Gồm: (1) File rubric của assignment, chứa tiêu chí và mô tả mức độ đáp ứng; (2) File bài assignment của học viên; (3) Hướng dẫn hoặc yêu cầu bổ sung của assignment nếu có. Đây là những tài liệu học viên đã có trong quy trình hiện tại. Tuy nhiên, cần kiểm tra khả năng đọc các định dạng file, bảng biểu, hình ảnh và nội dung không thể trích xuất thành văn bản. |
+| **Feedback — Lấy phản hồi ở đâu để cải thiện?** | Thu thập phản hồi từ học viên sau mỗi lần sử dụng: nhận định nào đúng/sai, bằng chứng có chính xác không, tiêu chí nào bị bỏ sót và kết quả nào cần kiểm tra lại. Có thể sử dụng rubric và bài assignment đã được người có chuyên môn xác nhận để tạo bộ test đánh giá. Các lỗi được ghi nhận sẽ dùng để điều chỉnh prompt, quy tắc đối chiếu và cách hiển thị kết quả. Không sử dụng bài làm hoặc dữ liệu cá nhân cho mục đích cải thiện nếu chưa có sự cho phép phù hợp. |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
