@@ -195,22 +195,35 @@ Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+Bài của nhóm nằm ở ô: **Độ mơ hồ thấp – Độ phức tạp thấp**
 
 Vì sao:
+- **Độ mơ hồ thấp**: Rubric là file có cấu trúc rõ (PDF/Notion/GDoc),
+  tiêu chí định lượng có đáp án đúng/sai rõ ràng (có link repo hay không,
+  có đủ section hay không). Không có trường hợp "nhiều cách đều đúng".
+- **Độ phức tạp thấp**: Quy trình cố định 3 bước:
+  đọc rubric → đọc bài nộp → so sánh từng tiêu chí.
+  Không rẽ nhánh, không cần hỏi thêm người dùng giữa chừng.
 
 ### 6.2. So sánh 4 mức
 
-| Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
+| Mức | Phương án cho bài | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| No AI (sửa quy trình) | Checklist tĩnh tự điền trước mỗi lần nộp | Rubric không đổi giữa các bài; học viên kỷ luật tự check | Rubric thay đổi theo từng bài → checklist lỗi thời; 3/5 người không đọc rubric chủ động → không dùng | Dùng làm fallback cho người không có tool |
+| Rule | Script đọc tên file/folder, check link có hợp lệ không, đếm số section bằng regex | Tiêu chí chỉ là kiểm tra cấu trúc file/text thuần túy | Không đọc được ngữ nghĩa (section có tên đúng nhưng nội dung trống vẫn pass); không đọc được PDF/Notion linh hoạt | Không chọn — quá cứng |
+| Workflow | Parse rubric → trích tiêu chí định lượng → LLM so sánh với bài nộp → trả checklist có/chưa có | Rubric có file, tiêu chí định lượng chiếm đa số, các bước cố định không rẽ nhánh | LLM có thể nhầm tiêu chí định tính thành đã đạt; cần người dùng review output trước khi tin | **Chọn** |
+| Agent | AI tự tìm rubric, tự đánh giá toàn bộ bài kể cả định tính, tự đề xuất điểm | Khi tiêu chí mơ hồ, cần suy luận nhiều bước, bài nộp ở nhiều nguồn khác nhau | Quá rộng so với bài toán; kết quả khó kiểm soát; 3/5 rubric có phần định tính AI không đánh giá được chính xác | Không chọn |
 
-**Mức chọn:**
+**Mức chọn: Workflow**
 
 **Vì sao không chọn mức đơn giản hơn:**
+Survey 5 người cho thấy rubric thay đổi theo từng bài (không bài nào
+giống bài nào) → checklist tĩnh (No AI) lỗi thời ngay tuần sau.
+Rule/script không đọc được ngữ nghĩa của bài nộp dạng văn bản tự do.
+Workflow đủ vì các bước cố định: parse rubric → so sánh → trả kết quả,
+AI chỉ làm đúng phần ngôn ngữ — trích tiêu chí và so khớp — không cần
+tự quyết định hay hỏi thêm. Agent không cần thiết vì quy trình không
+rẽ nhánh và toàn bộ input đã có sẵn trong 2 file (rubric + bài nộp).
 
 ### 6.3. AI Canvas rút gọn
 
