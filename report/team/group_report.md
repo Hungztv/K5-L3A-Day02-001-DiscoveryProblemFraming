@@ -18,15 +18,15 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
+| 1 | Dương Mạnh Hùng | Khi bắt đầu buổi lab và nhận tài liệu Git, tôi muốn hiểu mục tiêu và hướng dẫn ngay ở lần đọc đầu, để bắt đầu làm bài đúng hướng. | Sinh viên tham gia buổi lab | Đọc mục tiêu và phân chia công việc chưa rõ, phải đọc lại hướng dẫn; khoảng 30–60 phút/buổi. | Chưa pitch |
+| 2 | Dương Mạnh Hùng | Khi phát hiện lỗi hoặc thấy sản phẩm có vấn đề, tôi muốn xác định và sửa nguyên nhân trong thời gian ngắn, để duy trì hiệu năng công việc và chất lượng sản phẩm. | Lập trình viên backend | Debug và xác định nguyên nhân sau khi xem log; tổng thời gian khoảng 30–90 phút/ngày. | Chưa pitch |
+| 3 | Dương Mạnh Hùng | Khi bắt đầu làm bài và cần đọc file Markdown hoặc slide có cấu trúc nhiều phần, tôi muốn tìm và hiểu đúng thông tin, để không bỏ sót hoặc hiểu sai yêu cầu. | Sinh viên | Đọc hiểu và kiểm tra lại nội dung; 2–5 tài liệu/ngày, mỗi tài liệu 20–30 phút. | Chưa pitch |
+| 4 | Kiều Thắng | Khi cần tài liệu trong nhóm Discord, tôi muốn tìm và xác định đúng tài liệu cần dùng, để phục vụ việc học tập và làm việc. | Học viên | Tìm và xác định đúng tài liệu trong Discord; khoảng 30 phút/lần. | Chưa pitch |
+| 5 | Kiều Thắng | Khi bắt đầu tuần học, tôi muốn biết thông báo và lịch học nào cần chú ý, để không bỏ lỡ hoạt động hoặc thời hạn quan trọng. | Học viên | Đọc thông báo, lọc thông tin liên quan và đối chiếu lịch/hạn nộp; đã từng sai thời khóa biểu và đến muộn. | Chưa pitch |
+| 6 | Kiều Thắng | Khi chuẩn bị nộp từng bài lab trong ngày, tôi muốn hiểu rõ yêu cầu và hạn nộp, để hoàn thành đúng yêu cầu trước 23:59. | Học viên | Đọc chưa kỹ yêu cầu dẫn đến thiếu sót và nộp sát giờ. | Chưa pitch |
+| 7 | Lê Quang Vinh | Khi khách hàng gửi yêu cầu bảo hành xe, tôi muốn yêu cầu được phân loại và chuyển đến đúng bộ phận, để quá trình kiểm tra và xử lý bảo hành diễn ra nhanh chóng. | Nhân viên tiếp nhận yêu cầu bảo hành / chăm sóc khách hàng | Đọc mô tả, xác định loại sự cố và tìm đúng bộ phận phụ trách (bước 3–4); thời gian chưa xác định. | Chưa pitch |
+| 8 | Lê Quang Vinh | Khi cư dân gửi phản ánh về sự cố tại khu đô thị, tôi muốn phản ánh được ghi nhận, chuyển đúng bộ phận và cập nhật trạng thái, để vấn đề được giải quyết kịp thời mà không phải liên hệ nhiều lần. | Nhân viên chăm sóc khách hàng / ban quản lý khu đô thị | Xác định mức độ ưu tiên và chuyển phản ánh đến đúng bộ phận (bước 3–4); thời gian chưa xác định. | Chưa pitch |
+| 9 | Lê Quang Vinh | Khi nhu cầu đặt xe tăng cao vào giờ cao điểm, tôi muốn biết khu vực có nhu cầu lớn và điều phối xe phù hợp, để giảm thời gian chờ và hạn chế thiếu xe cục bộ. | Nhân viên điều phối vận hành / tài xế Xanh SM | Tìm kiếm và phân bổ xe phù hợp khi nhu cầu tập trung tại một khu vực (bước 3–5); thời gian chưa xác định. | Chưa pitch |
 | 10 | | | | | |
 | 11 | | | | | |
 | 12 | | | | | |
