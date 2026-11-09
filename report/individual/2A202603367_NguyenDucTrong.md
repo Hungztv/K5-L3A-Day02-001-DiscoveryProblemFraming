@@ -107,15 +107,15 @@ Vấn đề: Bước đối chiếu làm thủ công khi đã mệt cuối ngày
 
 ### Card muốn pitch nhất
 
-- Card số:
-- Vì sao:
-- Câu hỏi muốn nhóm phản biện:
+- Card số: 2
+- Vì sao: Gắn liền trực tiếp với nỗi đau hàng tuần của bản thân và các học viên khóa AI Thực chiến khi nộp bài assignment sát giờ, dễ kiểm chứng thực tế và có số liệu rõ ràng.
+- Câu hỏi muốn nhóm phản biện: Làm sao bạn đảm bảo hệ thống tự động (nếu dùng AI) có thể chấm hoặc đối chiếu chính xác những tiêu chí định tính, khi mà LLM thường dễ bị ảo giác (hallucination) ở các phần đánh giá định tính sâu?
 
 ### AI đã phản biện card thế nào
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| | | |
+|Tiêu chí định tính trong rubric (như phân tích sâu, lý luận tốt) khó check tự động 100% bằng AI đơn thuần. |Có |Thu hẹp phạm vi (scope) của AI chỉ tập trung vào các tiêu chí định lượng rõ ràng (có link repo, đủ section bắt buộc, đúng định dạng), phần định tính để học viên tự review. |
 
 ---
 
@@ -123,16 +123,16 @@ Vấn đề: Bước đối chiếu làm thủ công khi đã mệt cuối ngày
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card |Pitch candidate #10 (chọn linh kiện) và #11 (kiểm tra rubric). |Giúp nhóm đưa #11 vào shortlist và sau đó chọn làm đề tài chính. |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Đặt câu hỏi phản biện cho candidate #2 của Hùng (về việc AI tự sửa lỗi hay người dùng dùng AI) và candidate #3 (về việc tìm kiếm trong tài liệu Markdown)| Giúp làm rõ ranh giới can thiệp của AI trong các bài toán nhóm khác. |
+| Nhận phản biện | Câu hỏi tôi nhận được: Nhận câu hỏi từ Kiều Thắng về khả năng đối chiếu tiêu chí định tính của AI.| Tôi đã sửa gì: Dẫn đến quyết định chia tách rõ ràng tiêu chí định lượng (cho AI) và định tính (cho con người).|
+| Gom cluster / cây OST |Tham gia xây dựng cluster nhóm và nhánh Opportunity E (kiểm tra và quản lý kết quả). |Định hình đúng nhóm pain liên quan đến rubric và kiểm tra kết quả học tập. |
+| Chọn candidate problem |Thống nhất chọn candidate #11 làm bài toán trọng tâm cho toàn nhóm. |Xác định rõ actor và bối cảnh để làm research/survey tiếp theo. |
+| Kiểm chứng / research |Phụ trách CP4: Lập Assumption Map và tiến hành phỏng vấn/survey 5 người để kiểm chứng vấn đề rubric. |Xác nhận 5/5 người từng bị trừ điểm vì thiếu mục, chứng minh pain là thật. |
+| Quy trình nhóm |Xây dựng quy trình trước và sau khi có Workflow AI hỗ trợ check rubric. |Giảm thời gian review từ 15–20 phút xuống dưới 5 phút. |
+| Problem Statement |Hoàn thiện Problem Statement v0 và v1 cùng nhóm. |Chuẩn hóa các trường Actor, Quy trình, Bottleneck, Impact, Success Metric và Boundary. |
+| Mức can thiệp AI |Phụ trách ma trận No AI / Rule / Workflow / Agent (CP6). |Lựa chọn mức Workflow vì quy trình cố định 3 bước, rubric có file cấu trúc rõ ràng. |
+| Quyết định |Đánh giá 4 rủi ro (Value, Usability, Feasibility, Viability) và đưa ra quyết định Go cho nhóm. |Định hướng giải pháp prototype nhỏ gọn cho buổi lab. |
 
 ---
 
@@ -140,12 +140,12 @@ Vấn đề: Bước đối chiếu làm thủ công khi đã mệt cuối ngày
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
+| CP1 Scan |Gợi ý các lăng kính lặp lại và tốn thời gian |Đề xuất nhanh các ý tưởng ban đầu dựa trên bối cảnh học tập |Đưa ra các ý tưởng quá chung chung, không gắn với môi trường thực chiến |Lọc lại các ý phù hợp với trải nghiệm thực tế của bản thân |
+| CP2 Problem Card |Hỗ trợ định hình các trường trong Problem Card (Job Story, Bottleneck) |Cấu trúc hóa các bước quy trình hiện tại rõ ràng hơn |Đôi khi ước lượng thời gian bước bottleneck chưa sát thực tế |Điều chỉnh lại thời gian theo đúng trải nghiệm cá nhân (~15–20 phút review) |
+| CP4 Research |Tổng hợp các dạng rubric phổ biến và gợi ý công cụ so sánh text |Cung cấp góc nhìn về các phương pháp regex và LLM parsing |Không nắm rõ đặc thù rubric thay đổi linh hoạt theo từng bài assignment |Thêm điều kiện rubric động vào giả định kiểm chứng |
 | CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP5–6 Problem Statement |Góp ý hoàn thiện các câu chữ trong Problem Statement |Giúp câu văn súc tích, đúng chuẩn template |Dùng từ ngữ quá văn phong marketing, thiếu tính kỹ thuật |Sửa lại theo đúng ngôn từ kỹ thuật chuyên ngành AI |
+| CP6 Mức can thiệp / quyết định |Phân tích ưu nhược điểm giữa các mức Rule, Workflow và Agent |Cung cấp khung so sánh chuẩn theo ma trận mơ hồ × phức tạp |Đề xuất mức Agent cho bài toán đơn giản |Kiên định chọn mức Workflow vì quy trình không cần rẽ nhánh phức tạp |
 
 ---
 
