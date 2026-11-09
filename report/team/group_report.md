@@ -116,9 +116,9 @@ Tổng hợp:
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| **CoGrader – AI-powered Rubric Grading** | https://cograder.com/ | Hỗ trợ đọc bài assignment, đối chiếu nội dung với từng tiêu chí trong rubric, đề xuất điểm số và tạo feedback cho sinh viên. | Tự động đánh giá từng tiêu chí; hỗ trợ rubric tùy chỉnh; tạo feedback cụ thể; xử lý nhiều bài cùng lúc; giảng viên có thể chỉnh sửa kết quả trước khi trả bài. | Tập trung chủ yếu vào bài viết; kết quả AI vẫn cần giảng viên kiểm duyệt; có rủi ro đánh giá sai khi tiêu chí rubric phức tạp hoặc mang tính định tính. | Có thể ứng dụng AI để giảm thời gian đọc và đối chiếu bài làm. Cần hiển thị điểm số kèm giải thích theo từng tiêu chí và cho phép người dùng chỉnh sửa kết quả. |
+| **Gradescope – AI-assisted Grading & Answer Groups** | https://www.gradescope.com/ | Hỗ trợ phân loại các câu trả lời tương tự, nhóm bài làm và áp dụng rubric để chấm điểm hàng loạt thay vì đánh giá từng câu trả lời riêng lẻ. | Giảm thao tác chấm lặp lại; hỗ trợ rubric linh hoạt; có thể thay đổi rubric và áp dụng cập nhật cho các bài liên quan; hỗ trợ thống kê kết quả theo câu hỏi. | AI grouping chỉ hỗ trợ một số dạng câu hỏi nhất định; giảng viên vẫn phải xem xét các nhóm câu trả lời và quyết định điểm; không tự động đánh giá toàn bộ assignment theo ngữ nghĩa. | Có thể tối ưu quy trình bằng cách tự động phân loại và nhóm các bài có nội dung tương tự. Cần có bước xác nhận của con người trước khi áp dụng kết quả hàng loạt. |
+| **Turnitin Feedback Studio – Rubric & Feedback Management** | https://www.turnitin.com/products/feedback-studio/ | Hỗ trợ giảng viên đánh giá bài viết theo rubric, ghi nhận điểm số và phản hồi theo từng tiêu chí; đồng thời kiểm tra mức độ tương đồng nội dung. | Có rubric và grading forms; hỗ trợ nhận xét trực tiếp trên bài; tái sử dụng nhận xét thông qua QuickMarks; giúp sinh viên hiểu rõ điểm mạnh và điểm cần cải thiện. | Tập trung vào đánh giá bài viết và phản hồi học thuật; không phải giải pháp tự động chấm toàn bộ assignment theo rubric; giảng viên vẫn cần thực hiện việc đánh giá và nhập điểm. | Cần kết hợp điểm số với nhận xét cụ thể theo từng tiêu chí. Ngoài kết quả tổng thể, hệ thống nên giúp người học hiểu tại sao bài làm đạt hoặc chưa đạt yêu cầu. |
 
 ---
 
