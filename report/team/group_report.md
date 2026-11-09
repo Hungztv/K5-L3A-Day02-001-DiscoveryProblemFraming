@@ -90,39 +90,26 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | Học viên thực sự bị trừ điểm vì thiếu mục rubric, không phải chỉ vì chất lượng nội dung | Value | 5 | 5 | Đã xác nhận — 5/5 người khảo sát |
+| 2 | Rubric được cung cấp dưới dạng file đọc được như PDF, Google Doc, Notion hoặc Markdown | Feasibility | 5 | 5 | Đã xác nhận — 5/5 người khảo sát |
+| 3 | Có thể kiểm tra chính xác các tiêu chí định lượng như đủ section, có link repo hoặc đúng định dạng file | Feasibility | 5 | 3 | Cần kiểm chứng bằng prototype nhỏ |
+| 4 | AI không thể kiểm tra chính xác các tiêu chí định tính như chất lượng phân tích hoặc lập luận | Feasibility | 5 | 4 | Đã xác nhận một phần — 3/5 rubric có tiêu chí định tính |
+| 5 | Người dùng sẽ kiểm tra công cụ trước khi nộp bài, không chỉ sau khi bị trừ điểm | Usability | 4 | 2 | Rủi ro — 3/5 người chỉ đọc rubric sau khi bị trừ điểm |
+| 6 | Đối chiếu thủ công mất khoảng 15 phút/lần; giảm xuống dưới 3 phút sẽ tạo giá trị rõ ràng | Value | 4 | 4 | Đã xác nhận sơ bộ — 5/5 người khảo sát |
 
-*Điền 4–6 giả định; xóa dòng thừa.*
-
-Giả định nhóm kiểm chứng trong buổi này:
+Giả định quan trọng nhưng ít bằng chứng cần kiểm chứng trước: tiêu chí 3 và 5.
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
-
-Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
-
-| Trường | Nội dung |
-|---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+**Cách đã dùng:** Survey Google Form, 5 người học.
 
 Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
+| Survey Google Form | 5 | 5/5 từng bị trừ điểm vì thiếu mục rubric; 5/5 dùng rubric dạng file text; thời gian đối chiếu thủ công khoảng 15 phút/lần | 3/5 chỉ đọc rubric sau khi bị trừ điểm, cho thấy người dùng chưa chủ động kiểm tra trước khi nộp |
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
+**Nhóm đã sửa problem thế nào sau kiểm chứng:** Thu hẹp phạm vi từ đối chiếu toàn bộ rubric thành kiểm tra các tiêu chí định lượng như section bắt buộc, link repo và định dạng file. Các tiêu chí định tính được đánh dấu để học viên tự review. Nhóm cũng đặt mục tiêu thử nghiệm kết quả kiểm tra dưới 30 giây và tổng thời gian rà soát định lượng dưới 3 phút, nhưng đây vẫn là mục tiêu cần đo qua prototype.
 
 ### 3.3. Research giải pháp đã có
 
