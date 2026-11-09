@@ -1,4 +1,4 @@
-# Báo cáo cá nhân — MSSV_HoTen
+# Báo cáo cá nhân — 2A202603431_DuongManhHung
 
 > Đổi tên file theo quy tắc `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md` (MSSV trước, dấu `_`, họ tên viết liền không dấu). Sửa cả dòng tiêu đề phía trên cho khớp.
 > Template chi tiết và prompt mẫu cho từng mục: [docs/01-worksheet.md](../../docs/01-worksheet.md).
@@ -6,11 +6,11 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
+- Họ tên: Dương Mạnh Hùng
+- MSSV: 2A202603431
 - Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm:
-- Link repo nhóm:
+- Tên nhóm: 001
+- Link repo nhóm: https://github.com/Hungztv/K5-L3A-Day02-001-DiscoveryProblemFraming
 
 ---
 
@@ -20,18 +20,18 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
+| 1 | Tốn thời gian / cần đọc, tổng hợp nhiều thông tin | Khi chuẩn bị mỗi buổi lab, tôi muốn hiểu tài liệu ngay ở lần đọc đầu, để bắt đầu làm bài đúng hướng. | Sinh viên | Mất khoảng 30 phút mỗi buổi; xảy ra khoảng 5 buổi/tuần, tương đương khoảng 150 phút/tuần. |
+| 2 | Cần đọc, tổng hợp nhiều thông tin | Khi cần lấy thông tin từ tài liệu có bảng biểu và cấu trúc phức tạp, tôi muốn tìm đúng dữ liệu và ngữ cảnh liên quan, để đưa ra kết luận chính xác. | Người nghiên cứu / lập trình viên | Xử lý 2–5 tài liệu/ngày, mất khoảng 20–30 phút; khi gặp lỗi thường phải kiểm tra lại 1–2 lần. |
+| 3 | Lặp lại / tốn thời gian | Khi hoàn thành một thay đổi trong mã nguồn backend, tôi muốn phát hiện sớm lỗi logic, bảo mật và truy vấn, để giảm thời gian debug và sửa lại. | Lập trình viên | Tự kiểm tra và debug mất khoảng 30–90 phút/ngày trong các ngày làm việc. |
+| 4 | Cần đọc, tổng hợp nhiều thông tin | Khi muốn chia sẻ một chủ đề kỹ thuật, tôi muốn cô đọng kiến thức thành nội dung ngắn gọn, dễ hiểu, để người khác có thể tiếp nhận và áp dụng. | Người làm nội dung kỹ thuật / cộng đồng công nghệ | Đã thực hiện 4 bài; mỗi bài mất khoảng 30–60 phút để đọc, cô đọng và biên tập. |
+| 5 | Tốn thời gian / lặp lại | Khi thiết kế cơ sở dữ liệu và API cho hệ thống nhiều cửa hàng, tôi muốn giữ mô hình dữ liệu và các endpoint nhất quán, để hệ thống mở rộng mà không phát sinh xung đột hoặc suy giảm hiệu năng. | Lập trình viên backend / nhóm phát triển | Công việc xuất hiện khoảng 4 lần/tuần; mỗi lần mất từ 30 phút đến một buổi; đã gặp vấn đề xung đột dữ liệu và truy vấn cần tối ưu. |
 | 6 | | | | |
 | 7 | | | | |
 | 8 | | | | |
 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
--
+- Tôi đã dùng AI để phản biện và chuẩn hóa cách diễn đạt các ý tưởng ban đầu thành Job Story. Tôi giữ lại các vấn đề có trải nghiệm và số liệu cụ thể; tôi bỏ cách viết solution-first như “dùng RAG”, “AI làm Code Reviewer” hoặc “xây Chatbot”, vì đó là giải pháp chứ chưa phải problem. Tôi tự kiểm tra và bổ sung lại thời gian, tần suất, số tài liệu và số bài thực tế dựa trên trải nghiệm của mình.
 
 ---
 
