@@ -153,20 +153,20 @@ Vấn đề: Bước đối chiếu làm thủ công khi đã mệt cuối ngày
 
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?** tôi nhận ra rằng nhiều pain point tưởng chừng rất nhỏ bé trong học tập và công việc hằng ngày đều có thể là vấn đề hàng ngày.
 
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?** Không, nhóm đã ngồi nghĩ rất lâu (hơn 2h) để suy nghĩ vấn đề của từng thành viên.
 
-**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.** tôi đã cùng nhóm thu hẹp phạm vi (scope) chỉ để AI hỗ trợ kiểm tra các tiêu chí định lượng rõ ràng.
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?** Có, khi 100% học viên đều từng bị trừ điểm vì thiếu mục rubric.
 
-**6.5. Điều khó nhất khi viết Problem Statement là gì?**
+**6.5. Điều khó nhất khi viết Problem Statement là gì?** Điều khó nhất là việc giữ cho Success Metric có thể đo lường được một cách khách quan
 
-**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?** Tôi sẽ đặt nhiều câu hỏi phản biện khắt khe hơn đối với các giả định về mức độ sẵn sàng sử dụng công cụ của người dùng.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+Quy trình xây dựng giải pháp AI bắt đầu từ việc nhận diện đúng problem (nỗi đau thực tế có số liệu đo lường), sau đó ánh xạ vào quy trình hiện tại để tìm ra điểm nghẽn (bottleneck). Từ đó, xác định rõ các boundary (ranh giới những gì AI tuyệt đối không được làm) để đảm bảo an toàn, kết hợp với việc lựa chọn mức can thiệp AI phù hợp nhất (No AI, Rule, Workflow, hay Agent). Cuối cùng, đưa ra quyết định Go/Not Yet dựa trên việc đánh giá toàn diện 4 rủi ro cốt lõi (Value, Usability, Feasibility, Viability) nhằm đảm bảo giải pháp vừa khả thi vừa mang lại giá trị thực tiễn cao cho người dùng.
 ---
 
 ## 7. Tài liệu tham khảo
