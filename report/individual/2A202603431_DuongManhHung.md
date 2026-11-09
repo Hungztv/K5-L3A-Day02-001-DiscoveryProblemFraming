@@ -133,13 +133,13 @@ Quy trình nháp hiện tại:
 | Pitch Problem Card | Trình bày Problem Card #1 về việc khó hiểu tài liệu Git trước buổi lab, với quy trình 30–60 phút và bottleneck ở việc đọc mục tiêu, phân chia công việc và đọc lại phần chưa hiểu. | Đưa một problem học tập cụ thể vào danh sách candidate để nhóm có thể so sánh với các problem về tài liệu, debug và quản lý công việc. |
 | Phản biện bài của bạn khác | Câu hỏi tôi đã đặt cho Lê Đoàn Dương: (1) Với quản lý công việc nhóm, lần gần nhất bạn phải hỏi lại nhiệm vụ hoặc deadline là khi nào, mất bao lâu và có gây trễ việc không? (2) Trong 2–3 giờ xử lý 5–8 tài liệu, bước nào là bottleneck chính: tìm kiếm, đánh giá nguồn, đọc hiểu hay tổng hợp? (3) Với quản lý thí nghiệm Machine Learning, lần gần nhất bạn không tìm lại được dataset, cấu hình hoặc checkpoint là khi nào; việc đó làm mất bao lâu hoặc ảnh hưởng kết quả ra sao? | Làm rõ bằng chứng hành vi, bước nghẽn và mức độ ảnh hưởng của ba candidate trước khi nhóm chấm điểm và chọn problem chung. |
 | Nhận phản biện | Câu hỏi tôi nhận được: Nguyễn Đức Trọng hỏi liệu problem debug backend là để người dùng tự phát hiện rồi AI hỗ trợ sửa, hay AI tự phát hiện và sửa toàn bộ; nếu file Markdown đã có mục lục thì bottleneck của problem đọc tài liệu còn là gì; Kiều Thắng hỏi vấn đề này chỉ xảy ra trong 1–2 buổi lab đầu hay xuyên suốt các buổi, và người dùng có sử dụng công cụ riêng nếu vòng đời vấn đề ngắn không. | Tôi xác định phạm vi debug là người dùng/lập trình viên phát hiện lỗi trước, sau đó AI chỉ hỗ trợ phân tích và gợi ý sửa; con người phải kiểm tra và chạy test. Với file Markdown, problem không phải thiếu mục lục mà là đọc hiểu mục tiêu, phân chia công việc, chọn phần liên quan và đối chiếu ngữ cảnh. Một số người có thể chỉ gặp vấn đề trong 1–2 buổi lab đầu, nhưng công cụ hỗ trợ đọc hiểu vẫn có thể giúp đọc tài liệu nhanh hơn và giúp nhiều người tiếp thu dễ hơn; nhóm cần kiểm chứng thêm tần suất và nhu cầu sử dụng công cụ riêng. |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Gom cluster / cây OST | Tham gia rà soát và gom 14 candidate thành 5 cluster: tìm hiểu thông tin học tập; nghiên cứu tài liệu kỹ thuật; phân loại yêu cầu/sự cố; điều phối công việc; kiểm tra và quản lý kết quả. | Giúp nhóm nhìn ra các pattern chung thay vì đánh giá rời rạc từng candidate. |
+| Chọn candidate problem | Tham gia thảo luận và chấm shortlist 3 candidate; thống nhất chọn #11 — kiểm tra bài assignment theo rubric. | Candidate được chọn có actor, bottleneck, metric và phạm vi phù hợp để kiểm chứng trong lab. |
+| Kiểm chứng / research | Điều phối việc tổng hợp survey 5 người của Trọng và research giải pháp của Dương; kiểm tra các giới hạn của CoGrader, Gradescope và Turnitin. | Nhóm thu hẹp phạm vi sang kiểm tra tiêu chí định lượng và ghi nhận phần định tính cần người học tự rà. |
+| Quy trình nhóm | Rà soát quy trình hiện tại/tương lai, boundary và phương án quay về khi công cụ không chắc chắn. | Quy trình giữ người học ở bước kiểm tra, sửa bài và quyết định nộp; không để công cụ tự chấm hoặc tự nộp. |
+| Problem Statement | Tổng hợp các trường Actor, Bottleneck, Impact, Success Metric và Boundary trong Problem Statement v0/v1. | Báo cáo xác định rõ baseline khoảng 15 phút/lần, mục tiêu thử nghiệm dưới 3 phút và các giới hạn của giải pháp. |
+| Mức can thiệp AI | Tham gia đánh giá No AI, Rule, Workflow và Agent; thống nhất chọn Workflow có HITL. | Giải pháp chỉ hỗ trợ đối chiếu tiêu chí định lượng, cung cấp bằng chứng và trạng thái có/thiếu/chưa rõ. |
+| Quyết định | Điều phối nhóm đánh giá bốn rủi ro và thống nhất quyết định Not Yet vì chưa có prototype/pilot. | Nhóm xác định bước tiếp theo là pilot nhỏ với rubric và assignment được phép sử dụng. |
 
 ---
 
@@ -147,12 +147,12 @@ Quy trình nháp hiện tại:
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Dùng AI để gợi ý cách mở rộng danh sách problem theo các lăng kính. | Giúp kiểm tra độ rộng của danh sách và chuyển ý tưởng thành Job Story. | AI dễ đưa ra solution-first hoặc problem quá rộng. | Tôi giữ lại các vấn đề xuất phát từ trải nghiệm thật và bổ sung thời gian/bottleneck thực tế. |
+| CP2 Problem Card | Dùng AI để phản biện actor, quy trình, bottleneck, metric và phương án không AI. | Giúp phát hiện problem debug và đọc tài liệu còn mơ hồ. | AI không có bằng chứng trải nghiệm của tôi và có thể gợi ý metric chưa đo được. | Tôi xác định lại debug là người dùng phát hiện lỗi trước, AI chỉ hỗ trợ phân tích; với Markdown, bottleneck là đọc hiểu và đối chiếu ngữ cảnh. |
+| CP4 Research | Dùng AI hỗ trợ lập danh sách công cụ và so sánh phạm vi giải quyết. | Giúp cấu trúc bảng research theo điểm mạnh, rủi ro và khoảng trống. | AI có thể mô tả sai tính năng hoặc nhầm công cụ cho giảng viên là công cụ cho học viên. | Tôi giữ các kết luận có link, ghi rõ giới hạn và nhấn mạnh cần kiểm chứng thêm với người học. |
+| CP5 Quy trình | Dùng AI để rà tính đầy đủ của các bước trước/sau và boundary. | Giúp kiểm tra có bước người dùng xác nhận và fallback hay chưa. | AI có xu hướng tự động hóa quá nhiều. | Tôi giữ quyền kiểm tra, sửa bài và quyết định nộp cho học viên. |
+| CP5–6 Problem Statement | Dùng AI để phản biện tính rõ ràng của actor, impact, metric và boundary. | Giúp nhóm phát hiện chỗ đang viết solution thay cho problem. | AI không thể thay thế dữ liệu survey hoặc pilot. | Tôi dùng survey 5 người và kết quả research của nhóm để thu hẹp scope. |
+| CP6 Mức can thiệp / quyết định | Dùng AI để so sánh No AI, Rule, Workflow và Agent, đồng thời rà bốn rủi ro. | Giúp nhóm nhìn rõ vì sao Workflow phù hợp hơn Agent. | AI không cung cấp bằng chứng về độ chính xác hoặc mức sẵn sàng sử dụng. | Nhóm chọn Not Yet, đặt ngưỡng pilot và không kết luận Go khi chưa có prototype. |
 
 ---
 
@@ -162,17 +162,29 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Tôi học được rằng cùng một dạng khó khăn “tìm và hiểu thông tin” có thể xuất hiện trong nhiều bối cảnh khác nhau: tài liệu lab, Discord, datasheet hoặc tài liệu nghiên cứu. Tuy nhiên, không nên gom chúng chỉ vì đều có thể dùng AI. Khi nghe các candidate của nhóm, tôi chú ý hơn đến actor, bước nghẽn và số liệu. Candidate kiểm tra rubric của Trọng nổi bật vì có tình huống cụ thể, quy trình dễ vẽ và thời gian đối chiếu khoảng 15 phút. Các candidate của Dương cho thấy một problem có thể đúng nhưng vẫn cần hỏi thêm lần gần nhất xảy ra và hậu quả thực tế. Tôi cũng nhận ra câu hỏi phản biện tốt phải hướng người trình bày về hành vi đã xảy ra, thay vì hỏi họ có thích một sản phẩm giả định hay không.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Nhóm có lúc bị solution-first khi nói ngay đến chatbot, trợ lý AI hoặc công cụ tự động hóa việc đọc tài liệu và kiểm tra bài. Chúng tôi nhận ra điều đó khi đối chiếu rubric CP3: opportunity phải là pain của người dùng, không phải tên công cụ. Nhóm quay lại viết Job Story, actor, quy trình hiện tại và bottleneck trước. Với candidate #11, nhóm cũng không mặc định AI phải chấm toàn bộ bài. Kết quả survey cho thấy rubric có cả tiêu chí định tính, nên nhóm thu hẹp sang kiểm tra section, link repo và định dạng file. Phần phân tích sâu và lập luận vẫn để người học tự đánh giá. Cách làm này giúp giải pháp có boundary rõ hơn và tránh hứa hẹn quá mức.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Sau khi Trọng hỏi về problem đọc Markdown, tôi đổi cách mô tả bottleneck. Ban đầu tôi nghĩ khó khăn chủ yếu là không tìm được mục cần đọc. Nhưng file Markdown đã có mục lục nên nhận định đó chưa đủ chính xác. Tôi điều chỉnh thành khó hiểu mục tiêu, chọn phần liên quan, phân chia công việc và đối chiếu ngữ cảnh. Khi Thắng hỏi vấn đề này chỉ xảy ra ở một hoặc hai buổi đầu hay xuyên suốt, tôi cũng thừa nhận cần thêm bằng chứng về tần suất và vòng đời. Với problem debug backend, tôi làm rõ AI không tự phát hiện và sửa toàn bộ; lập trình viên phải phát hiện lỗi, cung cấp log, kiểm tra gợi ý và chạy test. Phản biện giúp tôi giảm phạm vi và viết problem trung thực hơn.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Điều làm tôi bất ngờ là 5/5 người trong survey từng bị trừ điểm vì thiếu mục rubric, nhưng 3/5 chỉ đọc lại rubric sau khi đã bị trừ điểm. Điều này cho thấy pain có thật nhưng thói quen sử dụng công cụ trước deadline chưa chắc đã có. Tôi cũng nhận ra research công cụ hiện có không đồng nghĩa nhóm đã giải quyết đúng bài toán: CoGrader, Gradescope và Turnitin chủ yếu phục vụ giảng viên chấm hoặc phản hồi, còn nhóm đang xem xét học viên tự kiểm tra trước khi nộp. Vì vậy nhóm không nên tuyên bố đã có nhu cầu chắc chắn hoặc chọn Go ngay. Việc ghi nhận giới hạn mẫu survey, chưa có prototype và chưa đo false positive/negative làm quyết định Not Yet hợp lý hơn. Bước tiếp theo phải là pilot nhỏ với dữ liệu được phép dùng.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Khó nhất là tách problem, solution và metric khỏi nhau. Khi viết về đọc tài liệu hoặc debug, rất dễ đưa AI vào câu mô tả trước khi xác định người dùng đang kẹt ở bước nào. Với candidate #11, khó khăn là viết metric vừa có baseline vừa không biến target thành lời hứa. Nhóm có baseline khoảng 15 phút từ survey nhỏ, nhưng chưa có số đo độ chính xác hay thời gian chạy công cụ. Vì vậy tôi ghi rõ dưới 30 giây và dưới 3 phút chỉ là mục tiêu thử nghiệm, không phải kết quả đã đạt. Boundary cũng cần viết cụ thể: công cụ không chấm phần định tính, không tự sửa bài và không tự nộp bài. Việc này giúp người đọc hiểu con người vẫn chịu trách nhiệm cuối cùng.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+Nếu làm lại, tôi sẽ thu thập bằng chứng định lượng sớm hơn cho các problem của mình, đặc biệt là số lần đọc lại tài liệu và thời gian debug. Tôi cũng sẽ hỏi ngay mỗi thành viên về lần gần nhất vấn đề xảy ra, thay vì chỉ ghi ước lượng. Ở phần CP3, tôi sẽ phản biện mạnh hơn việc một công cụ có thực sự cần thiết hay checklist và workflow đã đủ hay chưa. Với candidate rubric, tôi sẽ yêu cầu nhóm lập đáp án chuẩn cho từng test case trước khi nói đến AI. Tôi cũng sẽ nhắc nhóm phân biệt công cụ dành cho giảng viên với công cụ dành cho học viên. Cuối cùng, tôi sẽ theo dõi rõ hơn ai phụ trách từng mục và deadline merge để tránh dồn việc vào cuối buổi.
+
+**6.7. Hiểu bài:** Problem của nhóm là học viên mất thời gian đối chiếu rubric với assignment và dễ bỏ sót các mục định lượng trước khi nộp. Quy trình gồm cung cấp rubric và bài, trích tiêu chí, đối chiếu bằng chứng, hiển thị có/thiếu/chưa rõ, rồi học viên kiểm tra và sửa bài. Baseline là khoảng 15 phút đối chiếu thủ công mỗi lần. Công cụ không được chấm phần định tính, tự sửa hoặc tự nộp bài; học viên vẫn là người kiểm tra và quyết định. Nhóm chọn Workflow có human-in-the-loop thay vì Agent. Vì chưa có prototype để đo độ chính xác và tốc độ, nhóm quyết định Not Yet và sẽ pilot nhỏ trước.
 
 ---
 
