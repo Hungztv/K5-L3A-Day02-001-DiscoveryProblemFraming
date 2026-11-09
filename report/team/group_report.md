@@ -18,55 +18,67 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+| 1 | Dương Mạnh Hùng | Khi bắt đầu buổi lab và nhận tài liệu Git, tôi muốn hiểu mục tiêu và hướng dẫn ngay ở lần đọc đầu, để bắt đầu làm bài đúng hướng. | Sinh viên tham gia buổi lab | Đọc mục tiêu và phân chia công việc chưa rõ, phải đọc lại hướng dẫn; khoảng 30–60 phút/buổi. | Kiều Thắng hỏi: Vấn đề chỉ xảy ra trong 1–2 buổi lab đầu hay xuyên suốt các buổi? Nếu vòng đời ngắn, người dùng có sẵn sàng sử dụng công cụ riêng không? |
+| 2 | Dương Mạnh Hùng | Khi phát hiện lỗi hoặc thấy sản phẩm có vấn đề, tôi muốn xác định và sửa nguyên nhân trong thời gian ngắn, để duy trì hiệu năng công việc và chất lượng sản phẩm. | Lập trình viên backend | Debug và xác định nguyên nhân sau khi xem log; tổng thời gian khoảng 30–90 phút/ngày. | Nguyễn Đức Trọng hỏi: Người dùng tự phát hiện lỗi rồi dùng AI hỗ trợ sửa, hay AI tự tìm và sửa toàn bộ từ đầu đến cuối? |
+| 3 | Dương Mạnh Hùng | Khi bắt đầu làm bài và cần đọc file Markdown hoặc slide có cấu trúc nhiều phần, tôi muốn tìm và hiểu đúng thông tin, để không bỏ sót hoặc hiểu sai yêu cầu. | Sinh viên | Đọc hiểu và kiểm tra lại nội dung; 2–5 tài liệu/ngày, mỗi tài liệu 20–30 phút. | Nguyễn Đức Trọng hỏi: Nếu file Markdown đã có mục lục, bottleneck còn nằm ở việc tìm mục hay ở việc đọc hiểu yêu cầu và ngữ cảnh? |
+| 4 | Kiều Thắng | Khi cần tài liệu trong nhóm Discord, tôi muốn tìm và xác định đúng tài liệu cần dùng, để phục vụ việc học tập và làm việc. | Học viên | Tìm và xác định đúng tài liệu trong Discord; khoảng 30 phút/lần. | Chưa pitch |
+| 5 | Kiều Thắng | Khi bắt đầu tuần học, tôi muốn biết các thông báo và lịch học nào cần chú ý, để không bỏ lỡ hoạt động hoặc thời hạn quan trọng. | Bản thân — học viên | Chưa xác định; cần đo thời gian đọc/đối chiếu và kiểm tra có phải xem lại thông báo hay không. | Chưa pitch |
+| 6 | Kiều Thắng | Khi chuẩn bị làm bài lab có hạn nộp trong ngày, tôi muốn hiểu rõ yêu cầu và các mục cần hoàn thành, để nộp bài đúng yêu cầu trước 23:59. | Bản thân — học viên | Chưa xác định; cần đo thời gian đọc/làm rõ yêu cầu và số lần phải hỏi lại hoặc phát hiện thiếu mục. | Chưa pitch |
+| 7 | Lê Quang Vinh | Khi khách hàng gửi yêu cầu bảo hành xe, tôi muốn yêu cầu được phân loại và chuyển đến đúng bộ phận, để quá trình kiểm tra và xử lý bảo hành diễn ra nhanh chóng. | Nhân viên tiếp nhận yêu cầu bảo hành / chăm sóc khách hàng | Đọc mô tả, xác định loại sự cố và tìm đúng bộ phận phụ trách (bước 3–4); thời gian chưa xác định. | Chưa pitch |
+| 8 | Lê Quang Vinh | Khi cư dân gửi phản ánh về sự cố tại khu đô thị, tôi muốn phản ánh được ghi nhận, chuyển đến đúng bộ phận và cập nhật trạng thái xử lý, để vấn đề được giải quyết kịp thời mà không phải liên hệ nhiều lần. | Nhân viên chăm sóc khách hàng / ban quản lý khu đô thị | Xác định mức độ ưu tiên và chuyển phản ánh đến đúng bộ phận (bước 3–4); thời gian chưa xác định. | Lê Đoàn Dương hỏi: Cư dân hiện gửi phản ánh qua những kênh nào? Ai là người chịu ảnh hưởng chính: cư dân hay nhân viên? |
+| 9 | Lê Quang Vinh | Khi nhu cầu đặt xe tăng cao vào giờ cao điểm, tôi muốn biết khu vực có nhu cầu lớn và điều phối xe phù hợp, để giảm thời gian chờ và hạn chế thiếu xe cục bộ. | Nhân viên điều phối vận hành / tài xế Xanh SM | Tìm kiếm và phân bổ xe phù hợp khi nhu cầu tập trung tại một khu vực (bước 3–5); thời gian chưa xác định. | Lê Đoàn Dương hỏi: Làm thế nào để đo lường hiệu quả điều phối xe? |
+| 10 | Nguyễn Đức Trọng | Khi tôi cần chọn linh kiện điện tử cho mạch thiết kế, tôi muốn tổng hợp và so sánh thông số kỹ thuật từ nhiều datasheet, để biết linh kiện nào dùng được và linh kiện nào sẽ gây hỏng mạch. | Kỹ sư / sinh viên điện tử đang thiết kế mạch (mình và nhóm thực chiến) | Đọc và so sánh thủ công nhiều datasheet ở bước 4–5; mất khoảng 60–120 phút/lần. | Lê Thành Vinh hỏi: Làm sao có thể xác định hỏng mạch nếu chỉ dựa vào datasheet? |
+| 11 | Nguyễn Đức Trọng | Khi nộp bài assignment cuối tuần, tôi muốn biết bài đã đáp ứng đủ tiêu chí trong rubric chưa, để không bị trừ điểm vì thiếu mục rubric. | Học viên khóa AI Thực chiến Khóa 5 | Đọc rubric và đối chiếu thủ công với bài; mất 15–20 phút/lần và dễ bỏ sót tiêu chí nhỏ. | Kiều Thắng hỏi: Làm sao bạn đảm bảo hệ thống tự động (nếu dùng AI) có thể chấm hoặc đối chiếu chính xác những tiêu chí định tính ? |
+| 12 | Lê Đoàn Dương | Khi thực hiện một dự án nhóm, tôi muốn theo dõi tập trung nhiệm vụ, người phụ trách và deadline, để đảm bảo các thành viên phối hợp hiệu quả và hoàn thành công việc đúng hạn. | Nhóm trưởng và các thành viên trong nhóm sinh viên | Thông tin tiến độ phân tán, phải tìm kiếm và hỏi lại thành viên chưa cập nhật; khoảng 2–3 lần hỏi lại/tuần, thời gian cần đo thêm. | Dương Mạnh Hùng hỏi: Lần gần nhất phải hỏi lại nhiệm vụ hoặc deadline là khi nào, mất bao lâu và có ảnh hưởng đến tiến độ không? |
+| 13 | Lê Đoàn Dương | Khi phải nghiên cứu một chủ đề để thực hiện đồ án hoặc bài thuyết trình, tôi muốn tìm kiếm, đánh giá và hệ thống hóa các tài liệu liên quan, để tiết kiệm thời gian và đảm bảo nội dung có cơ sở đáng tin cậy. | Sinh viên, thành viên nhóm thực hiện đồ án hoặc người nghiên cứu | Truy cập nhiều nguồn, đọc tài liệu dài và đánh giá thủ công; khoảng 5–8 tài liệu, mất 2–3 giờ/bài. | Dương Mạnh Hùng hỏi: Trong 2–3 giờ xử lý 5–8 tài liệu, bước nào là bottleneck chính: tìm kiếm, đánh giá nguồn, đọc hiểu hay tổng hợp? |
+| 14 | Lê Đoàn Dương | Khi thực hiện nhiều thí nghiệm Machine Learning với các dataset, model và hyperparameter khác nhau, tôi muốn quản lý tập trung cấu hình, kết quả và checkpoint của từng lần chạy, để có thể so sánh, tái lập và lựa chọn model phù hợp nhất. | Sinh viên AI/Data Science, người nghiên cứu Machine Learning và ML Engineer | Kết quả, cấu hình và checkpoint nằm ở nhiều file/thư mục; phải tìm lại thủ công khi so sánh hoặc tái lập, thời gian chưa đo. | Dương Mạnh Hùng hỏi: Lần gần nhất không tìm lại được dataset, cấu hình hoặc checkpoint là khi nào; việc đó làm mất bao lâu hoặc ảnh hưởng kết quả ra sao? |
 
 ### 2.2. Cluster
 
-| Cluster | Các candidate | Pattern chung |
-|---|---|---|
-| A | | |
-| B | | |
-| C | | |
+| Cluster | Các candidate | Pattern chung | Candidate đại diện |
+|---|---|---|---|
+| 1. Tìm kiếm và hiểu thông tin học tập | #1, #3, #4, #5, #6 | Tài liệu và thông báo nằm ở nhiều nơi, người học mất thời gian tìm kiếm, đọc hiểu và xác định đúng yêu cầu. | #6 |
+| 2. Nghiên cứu và so sánh tài liệu kỹ thuật | #10, #13 | Phải đọc nhiều nguồn hoặc datasheet, đánh giá độ phù hợp và tổng hợp thông tin thủ công. | #10 |
+| 3. Phân loại và xử lý yêu cầu hoặc sự cố | #2, #7, #8 | Phải xác định nguyên nhân, mức độ hoặc bộ phận phụ trách trước khi xử lý, dễ mất thời gian ở bước phân loại. | #8 |
+| 4. Điều phối công việc và nguồn lực | #9, #12 | Thông tin phân tán, khó phân bổ nguồn lực hoặc theo dõi người phụ trách, trạng thái và thời hạn. | #12 |
+| 5. Kiểm tra và quản lý kết quả | #11, #14 | Khó đối chiếu kết quả với tiêu chí hoặc tìm lại cấu hình, dữ liệu và kết quả cũ để kiểm tra, so sánh và tái lập. | #11 |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
 Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
-OUTCOME: 
-├── Opportunity A: 
-├── Opportunity B: 
-└── Opportunity C: 
+OUTCOME: Giảm ít nhất 30% thời gian và số lần làm lại khi tìm, hiểu và xử lý thông tin
+├── Opportunity A: Người học mất nhiều thời gian tìm và xác định đúng tài liệu, thông báo hoặc yêu cầu cần thực hiện
+├── Opportunity B: Người dùng phải đọc nhiều nguồn và tổng hợp thủ công để so sánh, đánh giá thông tin kỹ thuật
+├── Opportunity C: Người tiếp nhận khó xác định nguyên nhân, mức độ ưu tiên hoặc bộ phận phù hợp để xử lý yêu cầu
+├── Opportunity D: Nhóm khó theo dõi người phụ trách, trạng thái và deadline vì thông tin tiến độ bị phân tán
+└── Opportunity E: Người dùng khó đối chiếu kết quả với tiêu chí hoặc tìm lại dữ liệu, cấu hình và kết quả cũ
 ```
 
 Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
--
+- Tạo chatbot hoặc trợ lý AI để hỏi đáp tài liệu.
+- Tự động phân loại yêu cầu và chuyển đến đúng bộ phận.
+- Tạo dashboard quản lý task, deadline và trạng thái.
+- Tạo công cụ quản lý tập trung dataset, model và checkpoint.
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+| #6 — Hiểu yêu cầu lab | 5 | 4 | 2 | 4 | 5 | 5 | 5 | 30 |
+| #11 — Kiểm tra bài theo rubric | 5 | 5 | 4 | 5 | 5 | 5 | 5 | 34 |
+| #12 — Theo dõi task và deadline | 5 | 4 | 4 | 4 | 4 | 5 | 5 | 31 |
 
-**Candidate được chọn:**
+**Candidate được chọn:** #11 — Kiểm tra bài assignment theo rubric
 
-**Vì sao chọn:**
+**Vì sao chọn:** Có actor, quy trình và bottleneck rõ; pain có thể đo bằng thời gian đối chiếu và số tiêu chí bị bỏ sót. Phạm vi vừa sức để kiểm chứng và xây dựng prototype trong lab.
 
 **Vì sao loại các candidate còn lại:**
+
+- #6: Pain còn chưa đủ bằng chứng và chưa xác định rõ thời gian xử lý.
+- #12: Vấn đề thực tế nhưng cần thu thập dữ liệu từ nhiều thành viên, khó kiểm chứng nhanh.
 
 **Xử lý bất đồng (nếu có):**
 
@@ -78,39 +90,26 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-
-*Điền 4–6 giả định; xóa dòng thừa.*
+| 1 |Học viên thực sự bị trừ điểm vì thiếu mục rubric, không phải vì nội dung kém |Value |5 |5 |✅ Đã xác nhận — 5/5 survey |
+| 2 |Rubric được phát dưới dạng file text đọc được (PDF, Google Doc, Notion/MD), không phải nói miệng |Feasibility |5 |5 |✅ Đã xác nhận — 5/5 survey |
+| 3 |AI check được chính xác tiêu chí định lượng (có link repo, có code, đủ section) |Feasibility |5 |3 |✅ Cần prototype nhỏ |
+| 4 |AI không thể check chính xác tiêu chí định tính (phân tích sâu, lý luận tốt) |Feasibility |5 |4 |✅ Đã xác nhận — 3/5 survey có rubric kết hợp/định tính → scope chỉ làm phần định lượng |
+| 5 |Người dùng sẽ dùng tool trước khi nộp, không phải sau khi bị trừ điểm |Usability |4 |2 |✅ Rủi ro — 3/5 chỉ đọc rubric SAU khi bị trừ → cần thiết kế UX không đòi thay đổi thói quen |
+| 6 |Baseline đối chiếu thủ công ~15 phút/lần; tool rút xuống dưới 3 phút là đủ để người dùng thấy giá trị |Value |4 |4 |✅ Đã xác nhận — 5/5 survey |
 
 Giả định nhóm kiểm chứng trong buổi này:
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
-
-Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
-
-| Trường | Nội dung |
-|---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+Cách đã dùng: Survey (Google Form, 5 người)
 
 Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
+| Survey Google Form | 5 | 5/5 từng bị trừ điểm vì thiếu mục rubric; 100% rubric có dạng file text (PDF/GDoc/Notion); baseline ~15 phút/lần đối chiếu | 3/5 chỉ đọc rubric SAU khi bị trừ điểm → không dùng chủ động |
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
+**Nhóm đã sửa problem thế nào sau kiểm chứng:** Thu hẹp scope từ "đối chiếu toàn bộ rubric" thành "chỉ check tiêu chí định lượng (có/không có section bắt buộc, link repo, file nộp đúng format)". Phần định tính AI chỉ liệt kê để học viên tự review thủ công. Thêm yêu cầu UX: tool phải cho kết quả trong <30 giây, không yêu cầu thay đổi thói quen người dùng (vì 3/5 chỉ đọc rubric sau khi bị trừ điểm).
 
 ### 3.3. Research giải pháp đã có
 
