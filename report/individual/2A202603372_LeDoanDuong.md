@@ -6,11 +6,11 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
+- Họ tên: Lê Đoàn Dương
+- MSSV: 2A202603372
 - Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm:
-- Link repo nhóm:
+- Tên nhóm: 001
+- Link repo nhóm: https://github.com/Hungztv/K5-L3A-Day02-001-DiscoveryProblemFraming.git
 
 ---
 
