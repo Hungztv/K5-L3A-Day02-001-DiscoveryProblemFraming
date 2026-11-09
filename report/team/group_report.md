@@ -35,40 +35,50 @@
 
 ### 2.2. Cluster
 
-| Cluster | Các candidate | Pattern chung |
-|---|---|---|
-| A | | |
-| B | | |
-| C | | |
+| Cluster | Các candidate | Pattern chung | Candidate đại diện |
+|---|---|---|---|
+| 1. Tìm kiếm và hiểu thông tin học tập | #1, #3, #4, #5, #6 | Tài liệu và thông báo nằm ở nhiều nơi, người học mất thời gian tìm kiếm, đọc hiểu và xác định đúng yêu cầu. | #6 |
+| 2. Nghiên cứu và so sánh tài liệu kỹ thuật | #10, #13 | Phải đọc nhiều nguồn hoặc datasheet, đánh giá độ phù hợp và tổng hợp thông tin thủ công. | #10 |
+| 3. Phân loại và xử lý yêu cầu hoặc sự cố | #2, #7, #8 | Phải xác định nguyên nhân, mức độ hoặc bộ phận phụ trách trước khi xử lý, dễ mất thời gian ở bước phân loại. | #8 |
+| 4. Điều phối công việc và nguồn lực | #9, #12 | Thông tin phân tán, khó phân bổ nguồn lực hoặc theo dõi người phụ trách, trạng thái và thời hạn. | #12 |
+| 5. Kiểm tra và quản lý kết quả | #11, #14 | Khó đối chiếu kết quả với tiêu chí hoặc tìm lại cấu hình, dữ liệu và kết quả cũ để kiểm tra, so sánh và tái lập. | #11 |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
 Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
-OUTCOME: 
-├── Opportunity A: 
-├── Opportunity B: 
-└── Opportunity C: 
+OUTCOME: Giảm ít nhất 30% thời gian và số lần làm lại khi tìm, hiểu và xử lý thông tin
+├── Opportunity A: Người học mất nhiều thời gian tìm và xác định đúng tài liệu, thông báo hoặc yêu cầu cần thực hiện
+├── Opportunity B: Người dùng phải đọc nhiều nguồn và tổng hợp thủ công để so sánh, đánh giá thông tin kỹ thuật
+├── Opportunity C: Người tiếp nhận khó xác định nguyên nhân, mức độ ưu tiên hoặc bộ phận phù hợp để xử lý yêu cầu
+├── Opportunity D: Nhóm khó theo dõi người phụ trách, trạng thái và deadline vì thông tin tiến độ bị phân tán
+└── Opportunity E: Người dùng khó đối chiếu kết quả với tiêu chí hoặc tìm lại dữ liệu, cấu hình và kết quả cũ
 ```
 
 Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
--
+- Tạo chatbot hoặc trợ lý AI để hỏi đáp tài liệu.
+- Tự động phân loại yêu cầu và chuyển đến đúng bộ phận.
+- Tạo dashboard quản lý task, deadline và trạng thái.
+- Tạo công cụ quản lý tập trung dataset, model và checkpoint.
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+| #6 — Hiểu yêu cầu lab | 5 | 4 | 2 | 4 | 5 | 5 | 5 | 30 |
+| #11 — Kiểm tra bài theo rubric | 5 | 5 | 4 | 5 | 5 | 5 | 5 | 34 |
+| #12 — Theo dõi task và deadline | 5 | 4 | 4 | 4 | 4 | 5 | 5 | 31 |
 
-**Candidate được chọn:**
+**Candidate được chọn:** #11 — Kiểm tra bài assignment theo rubric
 
-**Vì sao chọn:**
+**Vì sao chọn:** Có actor, quy trình và bottleneck rõ; pain có thể đo bằng thời gian đối chiếu và số tiêu chí bị bỏ sót. Phạm vi vừa sức để kiểm chứng và xây dựng prototype trong lab.
 
 **Vì sao loại các candidate còn lại:**
+
+- #6: Pain còn chưa đủ bằng chứng và chưa xác định rõ thời gian xử lý.
+- #12: Vấn đề thực tế nhưng cần thu thập dữ liệu từ nhiều thành viên, khó kiểm chứng nhanh.
 
 **Xử lý bất đồng (nếu có):**
 
