@@ -20,16 +20,12 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
-| 6 | | | | |
-| 7 | | | | |
-| 8 | | | | |
+| 1 | Tốn thời gian | Khi chuẩn bị nộp bài gần deadline, tôi muốn kiểm tra nhanh bài còn thiếu phần nào, để tránh bị trừ điểm vì sai cấu trúc. | Học sinh | Mỗi bài mất 20–30 phút rà checklist; xảy ra 2–3 lần/môn. |
+| 2 | Lặp lại | Khi bắt đầu một task mới trong nhóm, tôi muốn tìm lại quy trình và quyết định cũ, để không phải hỏi lại cùng một câu. | Thành viên nhóm | Mỗi tuần hỏi lại 3–5 lần; mất 10–15 phút mỗi lần. |
+| 3 | Đọc và tổng hợp | Khi phải đọc nhiều tài liệu cho một bài thuyết trình, tôi muốn xác định nhanh ý chính và nguồn quan trọng, để hoàn thành phần chuẩn bị đúng hạn. | Thành viên nhóm | Đọc 5–8 tài liệu; mất khoảng 2–3 giờ/bài. |
+| 4 | Pain từ người khác | Khi làm việc nhóm, tôi muốn biết rõ ai phụ trách phần nào và deadline nào sắp đến, để tránh bỏ sót hoặc trùng công việc. | Nhóm trưởng | Mỗi tuần có 2–3 lần hỏi lại nhiệm vụ; từng trễ ít nhất 1 deadline. |
+| 5 | Lặp lại / tốn thời gian | Khi cần viết báo cáo tiến độ, tôi muốn tổng hợp các việc đã làm và vấn đề còn tồn đọng, để gửi cập nhật nhanh và đầy đủ. | Thành viên nhóm | Mỗi tuần mất 30–60 phút; phải lấy thông tin từ 3–4 nơi khác nhau. |
 
-**Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
 -
 
