@@ -165,16 +165,16 @@ BOTTLENECK CẦN KIỂM CHỨNG: Bước 3–5
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Trình bày các candidate về phân loại yêu cầu bảo hành, phản ánh cư dân và điều phối xe; nêu card muốn pitch là card 1. | Các candidate và câu hỏi muốn nhóm phản biện được ghi trong mục 3; nhóm sau đó chọn candidate #11 của Trọng. |
+| Phản biện bài của bạn khác | Hỏi: “Làm sao xác định một linh kiện có thể gây hỏng mạch nếu chỉ dựa vào datasheet mà chưa xét đến sự tương thích với toàn bộ mạch?” | Đã đặt câu hỏi phản biện; tác động cụ thể đến quyết định của nhóm chưa được ghi nhận. |
+| Nhận phản biện | Nhận câu hỏi khách hàng gửi yêu cầu bảo hành qua kênh nào; đã bổ sung ứng dụng VinFast, hotline và trực tiếp tại xưởng dịch vụ vào card. | Làm rõ đầu vào và kênh tiếp nhận trong quy trình nháp CP2. |
+| Gom cluster / cây OST | Không phải người phụ trách chính; chưa ghi nhận đóng góp cụ thể ở phần này. | Kết quả chung nằm trong `report/team/group_report.md`, mục 2. |
+| Chọn candidate problem | Nhóm chọn candidate #11: học viên kiểm tra nhanh các tiêu chí định lượng trong rubric trước khi nộp assignment. | Candidate do Trọng đề xuất; chưa ghi nhận đóng góp cá nhân cụ thể của tôi vào việc chấm điểm/chốt candidate. |
+| Kiểm chứng / research | Không phụ trách phỏng vấn/survey hoặc research; đã dùng kết quả CP4 của Trọng và Dương làm đầu vào khi cập nhật bản nháp quy trình. | Quy trình được thu hẹp sang kiểm tra yêu cầu định lượng; phần định tính để người học tự rà. |
+| Quy trình nhóm (CP5) | Soạn sơ đồ Mermaid cho quy trình hiện tại/tương lai và bảng Before/After; cập nhật bản nháp theo kết quả survey CP4. | Ghi trong `report/team/group_report.md`, mục 4; bản nháp được commit `fc73524` trên branch `LeQuangVinh`. |
+| Problem Statement | Không phải người phụ trách viết v0 hoặc v1; chưa ghi nhận góp ý cá nhân cụ thể. | Thắng phụ trách theo phân công. |
+| Evaluation / test case (CP6) | Soạn 5 tiêu chí đánh giá và 5 tình huống test cho công cụ kiểm tra rubric, theo phạm vi CP4. | Ghi trong `report/team/group_report.md`, mục 7; đây là test case đề xuất, chưa chạy kiểm thử. |
+| Mức can thiệp AI / quyết định | Không phải người phụ trách ma trận hoặc quyết định cuối; chưa ghi nhận đóng góp cụ thể ngoài phần eval. | Nhóm trưởng điều phối quyết định; kết luận hiện tại trên `main` là Not Yet. |
 
 ---
 
@@ -182,12 +182,12 @@ BOTTLENECK CẦN KIỂM CHỨNG: Bước 3–5
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Hỏi trợ lý cách làm checkpoint và phân biệt problem với solution. | Giúp hiểu cấu trúc Job Story và nơi ghi nội dung. | Không cung cấp bằng chứng trải nghiệm thực tế thay cho tôi. | Tự chọn candidate và cần tự bổ sung dấu hiệu thực tế; không coi “cần đo” là bằng chứng. |
+| CP2 Problem Card | Hỏi cách hoàn thiện Problem Card và quy trình nháp. | Giúp hiểu các trường cần có trong card và quy trình nháp. | AI không thể xác nhận thời lượng hay metric thực tế nếu không có dữ liệu; các card trong file vẫn còn mục TBD/“cần đo”. | Giữ các mục chưa có dữ liệu ở trạng thái chưa xác minh; không dùng card CP2 làm bằng chứng cho candidate nhóm đã chọn. |
+| CP4 Research | Nhờ trợ lý xem các nhánh GitHub của Trọng và Dương để tìm kết quả CP4 liên quan. | Giúp rút ra kết quả survey và giới hạn phạm vi để cập nhật bản nháp quy trình/eval. | Kết quả từ mẫu 5 người là tự báo cáo, mẫu nhỏ; research sản phẩm không đồng nghĩa đã kiểm chứng nhu cầu của học viên. | Giữ rõ nguồn và giới hạn mẫu; thu hẹp kiểm tra tự động sang tiêu chí định lượng, không kết luận phần định tính. |
+| CP5 Quy trình | Nhờ trợ lý tạo/chỉnh sơ đồ Mermaid hiện tại và tương lai, cùng bảng Before/After. | Chuyển mô tả thành sơ đồ dễ đọc và làm rõ điểm kiểm tra của người học, boundary, fallback. | Bản sơ đồ đầu tiên là giả thuyết chung, chưa phản ánh bằng chứng survey hay thói quen chỉ đọc rubric sau khi bị trừ điểm. | Cập nhật lại theo kết quả CP4; giữ thời gian sau cải tiến là mục tiêu thử nghiệm, không ghi như kết quả đo. |
+| CP5–6 Problem Statement | Chưa dùng AI để viết Problem Statement thay người phụ trách. | — | — | Để người được phân công viết và nhóm tự chốt nội dung. |
+| CP6 Mức can thiệp / quyết định | Nhờ trợ lý đề xuất tiêu chí và test case cho phần evaluation được giao. | Có khung kiểm tra tính bao phủ, căn cứ, xử lý không chắc chắn và quyền quyết định của học viên. | Các case ban đầu chưa gắn với rubric/bài cụ thể và chưa được chạy; không thể xem là kết quả eval thực tế. | Điều chỉnh theo phạm vi CP4; ghi rõ cần lập đáp án chuẩn và chạy test, nếu nhóm chọn Rule/No AI thì đánh giá checklist/quy tắc thay vì đầu ra AI. |
 
 ---
 
