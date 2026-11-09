@@ -130,9 +130,9 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
+| Pitch Problem Card | Trình bày Problem Card #1 về việc khó hiểu tài liệu Git trước buổi lab, với quy trình 30–60 phút và bottleneck ở việc đọc mục tiêu, phân chia công việc và đọc lại phần chưa hiểu. | Đưa một problem học tập cụ thể vào danh sách candidate để nhóm có thể so sánh với các problem về tài liệu, debug và quản lý công việc. |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt cho Lê Đoàn Dương: (1) Với quản lý công việc nhóm, lần gần nhất bạn phải hỏi lại nhiệm vụ hoặc deadline là khi nào, mất bao lâu và có gây trễ việc không? (2) Trong 2–3 giờ xử lý 5–8 tài liệu, bước nào là bottleneck chính: tìm kiếm, đánh giá nguồn, đọc hiểu hay tổng hợp? (3) Với quản lý thí nghiệm Machine Learning, lần gần nhất bạn không tìm lại được dataset, cấu hình hoặc checkpoint là khi nào; việc đó làm mất bao lâu hoặc ảnh hưởng kết quả ra sao? | Làm rõ bằng chứng hành vi, bước nghẽn và mức độ ảnh hưởng của ba candidate trước khi nhóm chấm điểm và chọn problem chung. |
+| Nhận phản biện | Câu hỏi tôi nhận được: Nguyễn Đức Trọng hỏi liệu problem debug backend là để người dùng tự phát hiện rồi AI hỗ trợ sửa, hay AI tự phát hiện và sửa toàn bộ; và nếu file Markdown đã có mục lục thì bottleneck của problem đọc tài liệu còn là gì. | Tôi xác định phạm vi debug là người dùng/lập trình viên phát hiện lỗi trước, sau đó AI chỉ hỗ trợ phân tích và gợi ý sửa; con người phải kiểm tra và chạy test. Với file Markdown, problem không phải thiếu mục lục mà là đọc hiểu mục tiêu, phân chia công việc, chọn phần liên quan và đối chiếu ngữ cảnh. |
 | Gom cluster / cây OST | | |
 | Chọn candidate problem | | |
 | Kiểm chứng / research | | |
