@@ -20,14 +20,12 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | Tốn thời gian / cần đọc, tổng hợp nhiều thông tin | Khi chuẩn bị mỗi buổi lab, tôi muốn hiểu tài liệu ngay ở lần đọc đầu, để bắt đầu làm bài đúng hướng. | Sinh viên | Mất khoảng 30 phút mỗi buổi; xảy ra khoảng 5 buổi/tuần, tương đương khoảng 150 phút/tuần. |
-| 2 | Cần đọc, tổng hợp nhiều thông tin | Khi cần lấy thông tin từ tài liệu có bảng biểu và cấu trúc phức tạp, tôi muốn tìm đúng dữ liệu và ngữ cảnh liên quan, để đưa ra kết luận chính xác. | Người nghiên cứu / lập trình viên | Xử lý 2–5 tài liệu/ngày, mất khoảng 20–30 phút; khi gặp lỗi thường phải kiểm tra lại 1–2 lần. |
-| 3 | Lặp lại / tốn thời gian | Khi hoàn thành một thay đổi trong mã nguồn backend, tôi muốn phát hiện sớm lỗi logic, bảo mật và truy vấn, để giảm thời gian debug và sửa lại. | Lập trình viên | Tự kiểm tra và debug mất khoảng 30–90 phút/ngày trong các ngày làm việc. |
+| 1 | Tốn thời gian / cần đọc, tổng hợp nhiều thông tin | Khi bắt đầu buổi lab và nhận tài liệu Git, tôi muốn hiểu mục tiêu và hướng dẫn ngay ở lần đọc đầu, để bắt đầu làm bài đúng hướng. | Sinh viên tham gia buổi lab | Mất khoảng 30–60 phút mỗi buổi; xảy ra khoảng 5 buổi/tuần, tương đương khoảng 150–300 phút/tuần. |
+| 2 | Cần đọc, tổng hợp nhiều thông tin | Khi bắt đầu làm bài và cần đọc file Markdown hoặc slide có cấu trúc nhiều phần, tôi muốn tìm đúng thông tin và ngữ cảnh liên quan, để không bỏ sót hoặc hiểu sai yêu cầu. | Sinh viên | Xử lý 2–5 tài liệu/ngày, mỗi tài liệu mất khoảng 20–30 phút; khi gặp lỗi thường phải kiểm tra lại 1–2 lần. |
+| 3 | Lặp lại / tốn thời gian | Khi phát hiện lỗi hoặc thấy sản phẩm có vấn đề, tôi muốn xác định và sửa nguyên nhân trong thời gian ngắn, để duy trì hiệu năng công việc và chất lượng sản phẩm. | Lập trình viên backend | Tổng thời gian tự kiểm tra và debug khoảng 30–90 phút/ngày trong các ngày làm việc; thời gian từng lần lỗi chưa được tách riêng ở bước scan. |
 | 4 | Cần đọc, tổng hợp nhiều thông tin | Khi muốn chia sẻ một chủ đề kỹ thuật, tôi muốn cô đọng kiến thức thành nội dung ngắn gọn, dễ hiểu, để người khác có thể tiếp nhận và áp dụng. | Người làm nội dung kỹ thuật / cộng đồng công nghệ | Đã thực hiện 4 bài; mỗi bài mất khoảng 30–60 phút để đọc, cô đọng và biên tập. |
 | 5 | Tốn thời gian / lặp lại | Khi thiết kế cơ sở dữ liệu và API cho hệ thống nhiều cửa hàng, tôi muốn giữ mô hình dữ liệu và các endpoint nhất quán, để hệ thống mở rộng mà không phát sinh xung đột hoặc suy giảm hiệu năng. | Lập trình viên backend / nhóm phát triển | Công việc xuất hiện khoảng 4 lần/tuần; mỗi lần mất từ 30 phút đến một buổi; đã gặp vấn đề xung đột dữ liệu và truy vấn cần tối ưu. |
-| 6 | | | | |
-| 7 | | | | |
-| 8 | | | | |
+
 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
@@ -41,9 +39,9 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | Khó hiểu tài liệu hướng dẫn trước mỗi buổi lab | Xảy ra khoảng 5 buổi/tuần, mất 30 phút mỗi buổi; actor và bottleneck dễ xác định. | Chưa biết nguyên nhân chính là tài liệu dài, cấu trúc khó hiểu hay thiếu ví dụ. |
-| 2 | Mất nhiều thời gian kiểm tra và debug code backend | Xảy ra hầu hết các ngày làm việc, mất 30–90 phút/ngày; impact rõ và có thể đo bằng thời gian debug. | Chưa biết lỗi logic, bảo mật hay truy vấn là nhóm lỗi chiếm nhiều thời gian nhất. |
-| 3 | Khó trích xuất đúng thông tin từ tài liệu có bảng biểu | Xử lý 2–5 tài liệu/ngày, mất 20–30 phút và có lúc phải kiểm tra lại 1–2 lần. | Chưa biết lỗi thường đến từ cấu trúc tài liệu, cách tìm kiếm hay thiếu bước kiểm chứng. |
+| 1 | Khó hiểu tài liệu Git trước mỗi buổi lab | Xảy ra khoảng 5 buổi/tuần, mất 30–60 phút mỗi buổi; actor và bottleneck dễ xác định. | Chưa biết nguyên nhân chính là mục tiêu, phân chia công việc hay hướng dẫn chưa rõ. |
+| 2 | Mất nhiều thời gian xác định và sửa lỗi backend | Xảy ra hầu hết các ngày làm việc, tổng thời gian debug 30–90 phút/ngày; impact rõ và có thể đo theo từng lần lỗi ở bước tiếp theo. | Chưa biết lỗi logic, bảo mật hay truy vấn là nhóm lỗi chiếm nhiều thời gian nhất. |
+| 3 | Khó tìm và hiểu thông tin trong file Markdown hoặc slide có cấu trúc nhiều phần | Xử lý 2–5 tài liệu/ngày, mỗi tài liệu mất 20–30 phút và có lúc phải kiểm tra lại 1–2 lần. | Chưa biết lỗi thường đến từ cấu trúc tài liệu, cách đọc hay thiếu bước kiểm chứng. |
 
 ### Problem Card #1
 
@@ -53,7 +51,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Actor | Sinh viên tham gia buổi lab |
 | Thời điểm / bối cảnh | Bắt đầu buổi lab, khi nhận tài liệu Git và hướng dẫn bài tập |
 | Quy trình hiện tại (3–7 bước) | Mở tài liệu (5 phút) → đọc mục tiêu (5 phút) → đọc hướng dẫn (15–20 phút) → đọc lại phần chưa hiểu (10 phút) |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Đọc mục tiêu và phần phân chia công việc chưa rõ, khiến phải đọc lại hướng dẫn; tổng thời gian có thể lên 30–60 phút. |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Đọc mục tiêu và phần phân chia công việc chưa rõ, khiến phải đọc lại hướng dẫn; tổng thời gian là khoảng 30–60 phút. |
 | Impact (nếu không giải thì sao) | Có thể làm sai yêu cầu, mất nhiều thời gian hơn các bạn khác và phải hỏi lại. |
 | Success metric (baseline → target) | Thời gian hiểu tài liệu từ 30–60 phút xuống dưới 30 phút/buổi; đo bằng thời gian từ lúc mở tài liệu đến khi bắt đầu làm đúng task đầu tiên. |
 | Phương án không dùng AI | Dùng checklist, ghi chú cá nhân và tìm ví dụ minh họa trước khi bắt đầu làm bài. |
@@ -78,7 +76,7 @@ Quy trình nháp hiện tại:
 | Quy trình hiện tại (3–7 bước) | Khoanh vùng phần kiến trúc bị ảnh hưởng (5–10 phút) → trích xuất log (10 phút) → phân tích và sửa mã nguồn (10–20 phút hoặc lâu hơn) → kiểm tra, thử nghiệm lại toàn bộ luồng (20–30 phút) |
 | Bottleneck (bước nào, mất bao nhiêu phút) | Debug và xác định nguyên nhân sau khi xem log; bước sửa lỗi có thể kéo dài hơn 20 phút khi nguyên nhân chưa rõ. |
 | Impact (nếu không giải thì sao) | Tạo vòng lặp debug, làm giảm hiệu năng công việc và kéo dài thời gian hoàn thiện sản phẩm. |
-| Success metric (baseline → target) | Thời gian xử lý hiện tại khoảng 30–90 phút/lần lỗi; mục tiêu giảm xuống dưới 45 phút/lần lỗi. |
+| Success metric (baseline → target) | Baseline hiện có: tổng thời gian debug khoảng 30–90 phút/ngày; ở bước kiểm chứng sẽ đo riêng từng lần lỗi và mục tiêu là dưới 45 phút/lần lỗi. |
 | Phương án không dùng AI | Thiết lập test tự động và logging đầy đủ để phát hiện, tái hiện và khoanh vùng lỗi nhanh hơn. |
 | Giả thuyết về AI (nếu có) | Có thể dùng AI để hỗ trợ phân tích log và gợi ý nguyên nhân, nhưng lập trình viên phải kiểm tra mã nguồn và chạy test trước khi chấp nhận sửa đổi. |
 | Cảm nhận nhanh | Chưa biết |
@@ -94,9 +92,9 @@ Quy trình nháp hiện tại:
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi bắt đầu làm bài và cần đọc file Markdown hoặc slide do giảng viên cung cấp, tôi muốn tìm và hiểu đúng thông tin cần thiết, để hoàn thành bài mà không bỏ sót hoặc hiểu sai yêu cầu. |
+| Job Story | Khi bắt đầu làm bài và cần đọc file Markdown hoặc slide có cấu trúc nhiều phần, tôi muốn tìm và hiểu đúng thông tin cần thiết, để hoàn thành bài mà không bỏ sót hoặc hiểu sai yêu cầu. |
 | Actor | Sinh viên |
-| Thời điểm / bối cảnh | Khi bắt đầu làm bài từ tài liệu Markdown hoặc slide do giảng viên cung cấp |
+| Thời điểm / bối cảnh | Khi bắt đầu làm bài từ tài liệu Markdown hoặc slide có cấu trúc nhiều phần |
 | Quy trình hiện tại (3–7 bước) | Mở tài liệu (5 phút) → đọc nội dung (10–20 phút) → ghi chú và kiểm tra lại thông tin (15 phút) |
 | Bottleneck (bước nào, mất bao nhiêu phút) | Đọc hiểu nội dung, đặc biệt khi tài liệu có nhiều phần cần đối chiếu; bước này chiếm khoảng 10–20 phút và có thể phải kiểm tra lại. |
 | Impact (nếu không giải thì sao) | Hiểu sai hoặc bỏ sót thông tin, dẫn đến làm sai tài liệu, mất thêm thời gian và giảm lượng kiến thức tiếp thu được. |
@@ -114,17 +112,17 @@ Quy trình nháp hiện tại:
 
 ### Card muốn pitch nhất
 
-- Card số:
-- Vì sao:
-- Câu hỏi muốn nhóm phản biện:
+- Card số: 1
+- Vì sao: Đây là vấn đề xảy ra khoảng 5 buổi/tuần, mất 30–60 phút mỗi buổi, có quy trình và bottleneck rõ, đồng thời dễ kiểm chứng với các sinh viên khác.
+- Câu hỏi muốn nhóm phản biện: Nguyên nhân chính khiến sinh viên phải đọc lại tài liệu là mục tiêu chưa rõ, cách phân chia công việc hay thiếu ví dụ minh họa?
 
 ### AI đã phản biện card thế nào
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
 | Một số ý tưởng ban đầu viết theo hướng solution-first như RAG, AI Code Reviewer hoặc Chatbot thay vì mô tả problem. | Có | Viết lại thành Job Story tập trung vào bối cảnh, nhu cầu và kết quả mong muốn; đưa giải pháp vào phần giả thuyết riêng. |
-| Metric ban đầu còn chung chung, ví dụ “tối ưu nhanh nhất có thể”. | Có | Đổi thành metric đo được: debug từ 30–90 phút/lần lỗi xuống dưới 45 phút/lần lỗi. |
-| Bottleneck cần là một bước cụ thể trong quy trình, không chỉ là “quy trình chậm”. | Có | Bổ sung bước nghẽn và thời lượng: đọc lại phần chưa hiểu, debug/xác định nguyên nhân, và ghi chú/kiểm tra lại tài liệu. |
+| Metric ban đầu còn chung chung, ví dụ “tối ưu nhanh nhất có thể”. | Có | Đổi thành metric đo được: debug có tổng thời gian 30–90 phút/ngày ở bước scan và mục tiêu chi tiết dưới 45 phút/lần lỗi ở CP2. |
+| Bottleneck cần là một bước cụ thể trong quy trình, không chỉ là “quy trình chậm”. | Có | Bổ sung bước nghẽn và thời lượng: đọc lại phần chưa hiểu, debug/xác định nguyên nhân, và đọc hiểu/kiểm tra lại tài liệu. |
 
 ---
 
