@@ -206,9 +206,9 @@ Tái lập hoặc tiếp tục huấn luyện
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
+| Pitch Problem Card | Trình bày 3 Problem Card: quản lý công việc nhóm, tìm kiếm và tổng hợp tài liệu, quản lý thí nghiệm Machine Learning. | Giúp nhóm hiểu các vấn đề tôi đề xuất và có cơ sở để đánh giá, lựa chọn Problem phù hợp. |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt cho Lê Quang Vinh về đề tài tiếp nhận phản ánh cư dân và điều phối xe: (1) Cư dân hiện gửi phản ánh qua những kênh nào? (2) Ai là người chịu ảnh hưởng chính: cư dân hay nhân viên? (3) Làm thế nào để đo lường hiệu quả điều phối xe? |Làm rõ hơn đối tượng chịu ảnh hưởng, quy trình tiếp nhận phản ánh và cách đánh giá hiệu quả của giải pháp. Đồng thời yêu cầu người đề xuất làm rõ cơ sở thực tế của vấn đề. |
+| Nhận phản biện | Câu hỏi tôi nhận được từ Dương Mạnh Hùng về: (1) Lần gần nhất phải hỏi lại nhiệm vụ hoặc deadline, thời gian mất và ảnh hưởng đến tiến độ. (2) Bottleneck chính khi xử lý 5–8 tài liệu trong 2–3 giờ. (3) Lần gần nhất không tìm lại được dataset, cấu hình hoặc checkpoint và hậu quả. | Các câu hỏi yêu cầu tôi đưa ra tình huống thực tế, thời gian cụ thể và hậu quả thay vì chỉ mô tả vấn đề ở mức giả thuyết. Cần bổ sung bằng chứng và xác định chính xác bottleneck của từng Problem. |
 | Gom cluster / cây OST | | |
 | Chọn candidate problem | | |
 | Kiểm chứng / research | | |
