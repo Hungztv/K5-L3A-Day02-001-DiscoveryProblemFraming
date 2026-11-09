@@ -22,7 +22,7 @@
 | 2 | Dương Mạnh Hùng | Khi phát hiện lỗi hoặc thấy sản phẩm có vấn đề, tôi muốn xác định và sửa nguyên nhân trong thời gian ngắn, để duy trì hiệu năng công việc và chất lượng sản phẩm. | Lập trình viên backend | Debug và xác định nguyên nhân sau khi xem log; tổng thời gian khoảng 30–90 phút/ngày. | Nguyễn Đức Trọng hỏi: Người dùng tự phát hiện lỗi rồi dùng AI hỗ trợ sửa, hay AI tự tìm và sửa toàn bộ từ đầu đến cuối? |
 | 3 | Dương Mạnh Hùng | Khi bắt đầu làm bài và cần đọc file Markdown hoặc slide có cấu trúc nhiều phần, tôi muốn tìm và hiểu đúng thông tin, để không bỏ sót hoặc hiểu sai yêu cầu. | Sinh viên | Đọc hiểu và kiểm tra lại nội dung; 2–5 tài liệu/ngày, mỗi tài liệu 20–30 phút. | Nguyễn Đức Trọng hỏi: Nếu file Markdown đã có mục lục, bottleneck còn nằm ở việc tìm mục hay ở việc đọc hiểu yêu cầu và ngữ cảnh? |
 | 4 | Kiều Thắng | Khi cần tài liệu trong nhóm Discord, tôi muốn tìm và xác định đúng tài liệu cần dùng, để phục vụ việc học tập và làm việc. | Học viên | Tìm và xác định đúng tài liệu trong Discord; khoảng 30 phút/lần. | Chưa pitch |
-| 5 | Kiều Thắng | Khi bắt đầu tuần học, tôi muốn biết các thông báo và lịch học nào cần chú ý, để không bỏ lỡ hoạt động hoặc thời hạn quan trọng. | Bản thân — học viên | Chưa xác định; cần đo thời gian đọc/đối chiếu và kiểm tra có phải xem lại thông báo hay không. | Nguyễn Đức Trọng hỏi: Sinh viên hiện đã dùng Google Calendar kết hợp với thông báo của Zalo/Discord nhắc việc. Vậy họ có thực sự sẵn sàng thay đổi thói quen không? |
+| 5 | Kiều Thắng | Khi bắt đầu tuần học, tôi muốn biết các thông báo và lịch học nào cần chú ý, để không bỏ lỡ hoạt động hoặc thời hạn quan trọng. | Bản thân — học viên | Chưa xác định; cần đo thời gian đọc/đối chiếu và kiểm tra có phải xem lại thông báo hay không. | Nguyễn Đức Trọng hỏi: Sinh viên hiện đã dùng Google Calendar kết hợp với thông báo của LMS (Canvas, Moodle) hoặc Zalo/Discord nhắc việc. Nỗi đau thực sự khiến họ sẵn sàng thay đổi thói quen là gì? |
 | 6 | Kiều Thắng | Khi chuẩn bị làm bài lab có hạn nộp trong ngày, tôi muốn hiểu rõ yêu cầu và các mục cần hoàn thành, để nộp bài đúng yêu cầu trước 23:59. | Bản thân — học viên | Chưa xác định; cần đo thời gian đọc/làm rõ yêu cầu và số lần phải hỏi lại hoặc phát hiện thiếu mục. | Chưa pitch |
 | 7 | Lê Quang Vinh | Khi khách hàng gửi yêu cầu bảo hành xe, tôi muốn yêu cầu được phân loại và chuyển đến đúng bộ phận, để quá trình kiểm tra và xử lý bảo hành diễn ra nhanh chóng. | Nhân viên tiếp nhận yêu cầu bảo hành / chăm sóc khách hàng | Đọc mô tả, xác định loại sự cố và tìm đúng bộ phận phụ trách (bước 3–4); thời gian chưa xác định. | Chưa pitch |
 | 8 | Lê Quang Vinh | Khi cư dân gửi phản ánh về sự cố tại khu đô thị, tôi muốn phản ánh được ghi nhận, chuyển đến đúng bộ phận và cập nhật trạng thái xử lý, để vấn đề được giải quyết kịp thời mà không phải liên hệ nhiều lần. | Nhân viên chăm sóc khách hàng / ban quản lý khu đô thị | Xác định mức độ ưu tiên và chuyển phản ánh đến đúng bộ phận (bước 3–4); thời gian chưa xác định. | Lê Đoàn Dương hỏi: Cư dân hiện gửi phản ánh qua những kênh nào? Ai là người chịu ảnh hưởng chính: cư dân hay nhân viên? |
@@ -194,16 +194,15 @@ flowchart LR
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** |Học viên khóa AI Thực chiến (Khóa 5). |
+| **Quy trình** |Học viên chuẩn bị bài assignment ➔ Đọc rubric và đối chiếu các yêu cầu (có thể trước hoặc sau nộp) ➔ Nộp bài ➔ Nhận phản hồi và điểm số. |
+| **Bottleneck** |Quá trình đối chiếu bài làm với rubric thủ công tốn nhiều thời gian (~15 phút/lần). Nhiều học viên không có thói quen chủ động rà rubric trước khi nộp (3/5 người chỉ đọc lại sau khi bị trừ điểm), dẫn đến việc dễ bỏ sót các yêu cầu định lượng, định dạng cơ bản. |
+| **Impact** |100% học viên (5/5 người khảo sát) từng bị trừ điểm oan uổng, mất điểm vì thiếu sót các tiêu chí cơ bản/nhỏ trong rubric (như thiếu section, quên gắn link repo, sai format file). |
+| **Success Metric** (baseline → target, cách đo) | **Baseline**: Thời gian đối chiếu thủ công ~15 phút/lần; học viên thường xuyên bị trừ điểm lỗi hình thức/thiếu mục. **Target**: Hệ thống trả kết quả kiểm tra < 30 giây; tổng thời gian rà soát định lượng < 3 phút/lần. Triệt tiêu các lỗi trừ điểm do thiếu mục định lượng. **Cách đo**: Đo thời gian từ lúc input bài đến khi tool trả kết quả; khảo sát/phỏng vấn học viên về số điểm bị trừ do thiếu sót mục sau khi sử dụng công cụ. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) |**Giới hạn AI**: AI chỉ kiểm tra sự hiện diện của các tiêu chí định lượng (ví dụ: đủ số section bắt buộc, có link repo, đúng định dạng tên file). AI không chấm điểm chất lượng nội dung (phân tích, lập luận), không tự sửa bài và không tự nộp bài.  **HITL (Human-in-the-loop)**: Học viên bắt buộc phải tự rà soát lại các tiêu chí định tính. Học viên đưa ra quyết định nộp bài cuối cùng. Nếu file bị lỗi, rubric không rõ ràng hoặc AI báo thiếu sai, học viên quay về đối chiếu thủ công. |
+---
+**Phản biện nhận được**: Làm sao bạn đảm bảo hệ thống tự động (nếu dùng AI) có thể chấm hoặc đối chiếu chính xác những tiêu chí định tính? Nhóm đồng ý với rủi ro này (đã xác nhận qua survey 3/5 rubric có kết hợp định tính). Do đó, nhóm đã sửa lại Problem Statement và thu hẹp scope giải pháp: AI chỉ làm nhiệm vụ check phần định lượng (khách quan, có/không), phần định tính sẽ được tách riêng ra và báo lại để người dùng tự review thủ công.
 
-Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
-
--
 
 ---
 
